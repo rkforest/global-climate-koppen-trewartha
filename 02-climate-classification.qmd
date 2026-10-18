@@ -668,7 +668,7 @@ if (run_climate_classification) {
   if (!file_exists(determinants_path)) {
     stop(
       "The determinant dataset does not exist. ",
-      "Run 03-determinant-calculation.qmd first."
+      "Run 01-determinant-calculation.qmd first."
     )
   }
 

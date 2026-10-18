@@ -103,7 +103,7 @@ required_reference_files <- c(
 if (!all(file_exists(required_reference_files))) {
   stop(
     "Missing transition-mapping reference files in data/reference. ",
-    "Run 04-climate-classification.qmd to generate the reference data."
+    "Run 02-climate-classification.qmd to generate the reference data."
   )
 }
 
@@ -412,7 +412,7 @@ fn_build_long_term_group_map <- function(
 if (!file_exists(transitions_path)) {
   stop(
     "The transition dataset does not exist. ",
-    "Run 05-transition-analysis.qmd first."
+    "Run 03-transition-analysis.qmd first."
   )
 }
 
@@ -559,6 +559,7 @@ fn_build_long_term_group_map(
 ```{r}
 #| label: export-github-image
 #| echo: false
+#| eval: false
 social_preview_map <- fn_build_long_term_group_map(
   transition_results
 )

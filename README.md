@@ -83,66 +83,50 @@ groups and types through time.
 
 ## Project Structure
 
+```text
+Projects/
+├── era5-data/
+│   └── data/
+│       └── transformed/             # Shared ERA5 climatologies
+│
+└── global-climate-classification-change-analysis/
     ├── _quarto.yml
     ├── index.qmd
-    ├── 01-data-acquisition.qmd
-    ├── 02-data-transformation.qmd
-    ├── 03-determinant-calculation.qmd
-    ├── 04-climate-classification.qmd
-    ├── 05-transition-analysis.qmd
-    ├── 06-transition-mapping.qmd
+    ├── 01-determinant-calculation.qmd
+    ├── 02-climate-classification.qmd
+    ├── 03-transition-analysis.qmd
+    ├── 04-transition-mapping.qmd
     ├── R/
     │   └── climate-periods.R
     ├── data/
-    │   ├── raw/
-    │   ├── reference/
-    │   ├── cache/
-    │   ├── transformed/
-    │   └── derived/
+    │   ├── reference/               # Classification reference data
+    │   └── derived/                 # Classification analysis outputs
     └── README.md
+```
 
-### 01-data-acquisition.qmd
+### 01-determinant-calculation.qmd
 
-Downloads the ERA5 source data, acquires or creates the static geographic
-and classification reference data, documents the software environment, and
-produces a project data catalog.
+Reads the shared ERA5 temperature and precipitation climatologies from the companion ERA5-DATA project and calculates the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha climate classification system.
 
-### 02-data-transformation.qmd
+### 02-climate-classification.qmd
 
-Transforms the monthly ERA5 temperature and precipitation data into reusable
-climatological datasets for each analysis interval.
+Creates the classification-specific reference tables and coastline data, applies the Köppen–Trewartha classification rules to each climate interval, and summarizes the resulting climate groups and types.
 
-### 03-determinant-calculation.qmd
+### 03-transition-analysis.qmd
 
-Calculates the temperature, precipitation, and aridity determinants required
-by the Köppen–Trewartha climate classification system.
+Quantifies climate-group and climate-type transitions for REF → CSN, CSN → RCI, and REF → RCI using transition matrices and calculations of gains, losses, and net classification change.
 
-### 04-climate-classification.qmd
+### 04-transition-mapping.qmd
 
-Applies the Köppen–Trewartha classification rules to each climate interval
-and summarizes the resulting climate groups and types.
-
-### 05-transition-analysis.qmd
-
-Quantifies climate-group and climate-type transitions for REF → CSN,
-CSN → RCI, and REF → RCI using transition matrices and calculations of
-gains, losses, and net classification change.
-
-### 06-transition-mapping.qmd
-
-Maps the geographic distribution of classification changes, including
-within-group and between-group changes, expansion of dry and desert climate
-classifications, retreat of polar classifications, and the long-term
-REF → RCI transition pattern.
+Maps the geographic distribution of classification changes, including within-group and between-group changes, expansion of dry and desert climate classifications, retreat of polar classifications, and the long-term REF → RCI transition pattern.
 
 ## Software
 
-The analysis is written in R and rendered with Quarto.
+The climate-classification analysis is written in R and rendered with Quarto. Positron is used as the development environment.
 
 Major R packages include:
 
 - arrow
-- ecmwfr
 - fs
 - gt
 - patchwork
@@ -152,8 +136,9 @@ Major R packages include:
 - tidyverse
 - viridisLite
 
-Exact software and package versions used to render the project are
-documented in the Data Acquisition chapter.
+The project uses `renv` to manage reproducible R package dependencies. Package versions are recorded in `renv.lock`.
+
+ERA5 acquisition and transformation are performed separately in the companion **ERA5-DATA** project.
 
 ## Reproducible Environment
 
@@ -171,26 +156,26 @@ reproduce the software environment used during development.
 
 ## Reproducing the Analysis
 
-1. Clone the repository and open it as a Quarto project.
+This project uses transformed ERA5 climate datasets prepared by the companion **ERA5-DATA** project. The two projects are expected to reside in sibling directories under `~/Projects/`.
 
-2. Configure access to the Copernicus Climate Data Store for `ecmwfr`.
+1. Clone or obtain both the `era5-data` and `global-climate-classification-change-analysis` projects, placing them in sibling directories.
 
-3. Run or render the chapters in order:
+2. Prepare the shared monthly temperature and precipitation climatologies for REF (1961–1990), CSN (1991–2020), and RCI (2021–2025) using the acquisition and transformation notebooks in `era5-data`.
 
-       01-data-acquisition.qmd
-       02-data-transformation.qmd
-       03-determinant-calculation.qmd
-       04-climate-classification.qmd
-       05-transition-analysis.qmd
-       06-transition-mapping.qmd
+3. Open the Global Climate Classification Change Analysis project in Positron and restore its R environment using `renv::restore()`.
 
-The acquisition chapter downloads the required source data. Subsequent
-chapters progressively create transformed climate data, classification
-determinants, climate classifications, transition datasets, and final
-spatial analyses.
+4. Run the analysis notebooks in sequence:
 
-Because the ERA5 source datasets are large, a complete rebuild requires
-substantial download and processing time.
+       01-determinant-calculation.qmd
+       02-climate-classification.qmd
+       03-transition-analysis.qmd
+       04-transition-mapping.qmd
+
+The first notebook reads the shared ERA5 climatologies from `../era5-data/data/transformed/` and produces classification determinants. Subsequent notebooks generate climate classifications, analyze transitions among climate groups and types, and produce geographic maps of those transitions.
+
+The classification-specific reference tables and coastline data are generated by `02-climate-classification.qmd`.
+
+A complete rebuild requires running the acquisition and transformation workflow in ERA5-DATA before executing the classification analysis. Existing derived datasets may be reused when the corresponding calculation switches are disabled.
 
 ## Output
 

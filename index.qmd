@@ -40,41 +40,46 @@ The Köppen–Trewartha climate classification used in this project contains six
 
 ## Workflow
 
-The analysis is organized as a reproducible workflow consisting of six stages:
+## Workflow
 
-1. **Data Acquisition**  
-   Acquire ERA5 temperature, precipitation, and land-sea-mask data; create the static Köppen–Trewartha reference tables and coastline layer; and document the project software environment and acquired datasets.
+The project uses monthly ERA5 temperature and precipitation climatologies prepared by the companion **ERA5-DATA** project. That project handles ERA5 acquisition and transformation, producing reusable datasets for the REF, CSN, and RCI climate intervals.
 
-2. **Data Transformation**  
-   Convert the monthly ERA5 source data into reusable processing caches and twelve-month climatologies for temperature and precipitation for each climate interval.
+The climate-classification analysis is organized into four sequential stages:
 
-3. **Determinant Calculation**  
-   Calculate the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha classification system.
+1. **Determinant Calculation**  
+   Read the transformed ERA5 climatologies from the shared ERA5-DATA project and calculate the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha classification system.
 
-4. **Climate Classification**  
-   Apply the same Köppen–Trewartha classification rules to each grid cell for the REF, CSN, and RCI climate intervals and summarize the resulting climate groups and types.
+2. **Climate Classification**  
+   Apply the same Köppen–Trewartha classification rules to each grid cell for the REF, CSN, and RCI climate intervals; create the classification reference tables and coastline layer; and summarize the resulting climate groups and types.
 
-5. **Transition Analysis**  
+3. **Transition Analysis**  
    Quantify climate-group and climate-type transitions for REF → CSN, CSN → RCI, and REF → RCI; examine transition matrices; and calculate gains, losses, and net classification changes.
 
-6. **Transition Mapping**  
+4. **Transition Mapping**  
    Map the geographic distribution of climate-classification changes, including broad spatial patterns, expansion of dry and desert classifications, retreat of polar classifications, and the long-term REF → RCI transition pattern.
+
+The ERA5-DATA and Global Climate Classification Change Analysis projects are maintained as sibling directories under `~/Projects/`. Shared climate datasets remain in ERA5-DATA, while classification determinants, classifications, transition datasets, and mapping outputs belong to this analysis project.
 
 ## Data
 
-Climate data are obtained from the **ERA5 reanalysis** produced by the European Centre for Medium-Range Weather Forecasts and distributed through the Copernicus Climate Data Store.
+This analysis uses **ERA5 reanalysis** data produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) and distributed through the Copernicus Climate Data Store.
 
-The source data used in this analysis include:
+The companion **ERA5-DATA** project acquires and transforms the source data into reusable monthly climatologies for the three analysis intervals (REF, CSN, and RCI).
+
+The shared datasets contain:
 
 - Monthly 2 m air temperature
 - Monthly total precipitation
-- ERA5 land-sea mask
 
-Static project reference data include:
+These transformed datasets are read from the sibling project at `../era5-data/data/transformed/`.
+
+The climate-classification project maintains its own derived analytical datasets and static reference data, including:
 
 - Köppen–Trewartha climate-group definitions and colors
 - Köppen–Trewartha climate-type definitions and colors
 - Natural Earth global coastline data
+
+The ERA5 land-sea mask is an additional source dataset used in the broader data-preparation workflow.
 
 ## Software
 
@@ -82,20 +87,21 @@ Programming Language: **R**
 Development Environment: **Positron**  
 Document Creation: **Quarto**
 
-R Packages:
+Major R packages used in the climate-classification analysis include:
 
 - **arrow** – Parquet data import and export
-- **ecmwfr** – ERA5 acquisition from the Copernicus Climate Data Store
-- **fs** – file and directory operations
-- **gt** – summary tables
-- **patchwork** – plot layouts
+- **fs** – File and directory operations
+- **gt** – Summary tables
+- **patchwork** – Plot layouts
 - **rnaturalearth** – Natural Earth geographic data
-- **sf** – spatial data processing and mapping
-- **terra** – raster processing and climatological aggregation
-- **tidyverse** – data manipulation and visualization
-- **viridisLite** – climate-period color palettes
+- **sf** – Spatial data processing and mapping
+- **terra** – Raster processing and spatial analysis
+- **tidyverse** – Data manipulation and visualization
+- **viridisLite** – Climate-period color palettes
 
-Exact software and package versions used for the project are documented in the Data Acquisition chapter.
+The project uses **renv** for reproducible R package management. Package versions are recorded in `renv.lock`.
+
+ERA5 acquisition and transformation are handled separately by the companion **ERA5-DATA** project.
 
 ## References
 

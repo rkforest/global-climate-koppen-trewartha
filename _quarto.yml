@@ -10,12 +10,10 @@ book:
 
   chapters:
     - index.qmd
-    - 01-data-acquisition.qmd
-    - 02-data-transformation.qmd
-    - 03-determinant-calculation.qmd
-    - 04-climate-classification.qmd
-    - 05-transition-analysis.qmd
-    - 06-transition-mapping.qmd
+    - 01-determinant-calculation.qmd
+    - 02-climate-classification.qmd
+    - 03-transition-analysis.qmd
+    - 04-transition-mapping.qmd
  
 execute:
   warning: false
