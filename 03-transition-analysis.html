@@ -2,19 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rick Forest">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-10-18">
 
-<title>Transition Analysis – Global Climate Classification Change Analysis</title>
+<title>Transition Analysis – Global Climate Classification — Köppen–Trewartha</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -67,18 +73,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./06-transition-mapping.html" rel="next">
-<link href="./04-climate-classification.html" rel="prev">
+<link href="./04-transition-mapping.html" rel="next">
+<link href="./02-climate-classification.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-707766490a2d6a7e331f17c5d3230b06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-db6eafe1836baa1891fe4df064462fd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -119,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-transition-analysis.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Transition Analysis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-transition-analysis.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transition Analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -134,7 +140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Global Climate Classification Change Analysis</a> 
+      <a href="./">Global Climate Classification — Köppen–Trewartha</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -152,38 +158,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-data-acquisition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data Acquisition</span></span></a>
+  <a href="./01-determinant-calculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Determinant Calculation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-data-transformation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Transformation</span></span></a>
+  <a href="./02-climate-classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Climate Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-determinant-calculation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Determinant Calculation</span></span></a>
+  <a href="./03-transition-analysis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transition Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-climate-classification.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Climate Classification</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-transition-analysis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Transition Analysis</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-transition-mapping.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Transition Mapping</span></span></a>
+  <a href="./04-transition-mapping.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Transition Mapping</span></span></a>
   </div>
 </li>
     </ul>
@@ -232,7 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 18, 2026</p>
+      <p class="date">October 18, 2026</p>
     </div>
   </div>
   
@@ -260,18 +254,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressPackageStartupMessages</span>({</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressPackageStartupMessages</span>({</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(gt)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(arrow)</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(fs)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dir_derived <span class="ot">&lt;-</span> <span class="fu">path</span>(<span class="st">"data"</span>, <span class="st">"derived"</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dir_derived <span class="ot">&lt;-</span> <span class="fu">path</span>(<span class="st">"data"</span>, <span class="st">"derived"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>classification_path <span class="ot">&lt;-</span> <span class="fu">path</span>(</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  dir_derived,</span>
@@ -281,18 +275,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>transitions_path <span class="ot">&lt;-</span> <span class="fu">path</span>(</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  dir_derived,</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"climate_transitions.parquet"</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recalculate the transition dataset from climate_classification.parquet.</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recalculate the transition dataset from climate_classification.parquet.</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Set to TRUE after the classification dataset has changed or when the</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># transition dataset needs to be rebuilt. After a successful calculation,</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># FALSE can be used for fast previewing and rendering.</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>run_transition_analysis <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>run_transition_analysis <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -301,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/climate-periods.R"</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/climate-periods.R"</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>climate_periods <span class="sc">|&gt;</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
@@ -310,26 +304,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Abbreviation</span><span class="st">`</span> <span class="ot">=</span> period_abbr,</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Years</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">sprintf</span>(<span class="st">"%d–%d"</span>, start_year, end_year)</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="sfpztcbqsi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sfpztcbqsi table {
+<div id="jyuwaxxxdx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jyuwaxxxdx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sfpztcbqsi thead, #sfpztcbqsi tbody, #sfpztcbqsi tfoot, #sfpztcbqsi tr, #sfpztcbqsi td, #sfpztcbqsi th {
+#jyuwaxxxdx thead, #jyuwaxxxdx tbody, #jyuwaxxxdx tfoot, #jyuwaxxxdx tr, #jyuwaxxxdx td, #jyuwaxxxdx th {
   border-style: none;
 }
 
-#sfpztcbqsi p {
+#jyuwaxxxdx p {
   margin: 0;
   padding: 0;
 }
 
-#sfpztcbqsi .gt_table {
+#jyuwaxxxdx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -355,12 +349,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_caption {
+#jyuwaxxxdx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#sfpztcbqsi .gt_title {
+#jyuwaxxxdx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -372,7 +366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#sfpztcbqsi .gt_subtitle {
+#jyuwaxxxdx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -384,7 +378,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#sfpztcbqsi .gt_heading {
+#jyuwaxxxdx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -396,13 +390,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_bottom_border {
+#jyuwaxxxdx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_col_headings {
+#jyuwaxxxdx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -417,7 +411,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_col_heading {
+#jyuwaxxxdx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -437,7 +431,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#sfpztcbqsi .gt_column_spanner_outer {
+#jyuwaxxxdx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -449,15 +443,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#sfpztcbqsi .gt_column_spanner_outer:first-child {
+#jyuwaxxxdx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sfpztcbqsi .gt_column_spanner_outer:last-child {
+#jyuwaxxxdx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sfpztcbqsi .gt_column_spanner {
+#jyuwaxxxdx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -469,11 +463,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#sfpztcbqsi .gt_spanner_row {
+#jyuwaxxxdx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#sfpztcbqsi .gt_group_heading {
+#jyuwaxxxdx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -499,7 +493,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#sfpztcbqsi .gt_empty_group_heading {
+#jyuwaxxxdx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -514,15 +508,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#sfpztcbqsi .gt_from_md > :first-child {
+#jyuwaxxxdx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sfpztcbqsi .gt_from_md > :last-child {
+#jyuwaxxxdx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sfpztcbqsi .gt_row {
+#jyuwaxxxdx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -541,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#sfpztcbqsi .gt_stub {
+#jyuwaxxxdx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -554,7 +548,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#sfpztcbqsi .gt_stub_row_group {
+#jyuwaxxxdx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -568,15 +562,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#sfpztcbqsi .gt_row_group_first td {
+#jyuwaxxxdx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#sfpztcbqsi .gt_row_group_first th {
+#jyuwaxxxdx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#sfpztcbqsi .gt_summary_row {
+#jyuwaxxxdx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -586,16 +580,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#sfpztcbqsi .gt_first_summary_row {
+#jyuwaxxxdx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_first_summary_row.thick {
+#jyuwaxxxdx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#sfpztcbqsi .gt_last_summary_row {
+#jyuwaxxxdx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -605,7 +599,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_grand_summary_row {
+#jyuwaxxxdx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -615,7 +609,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#sfpztcbqsi .gt_first_grand_summary_row {
+#jyuwaxxxdx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -625,7 +619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_last_grand_summary_row_top {
+#jyuwaxxxdx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -635,11 +629,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_striped {
+#jyuwaxxxdx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sfpztcbqsi .gt_table_body {
+#jyuwaxxxdx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -648,7 +642,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_footnotes {
+#jyuwaxxxdx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -662,7 +656,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_footnote {
+#jyuwaxxxdx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -671,7 +665,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#sfpztcbqsi .gt_sourcenotes {
+#jyuwaxxxdx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -685,7 +679,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#sfpztcbqsi .gt_sourcenote {
+#jyuwaxxxdx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -693,77 +687,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#sfpztcbqsi .gt_left {
+#jyuwaxxxdx .gt_left {
   text-align: left;
 }
 
-#sfpztcbqsi .gt_center {
+#jyuwaxxxdx .gt_center {
   text-align: center;
 }
 
-#sfpztcbqsi .gt_right {
+#jyuwaxxxdx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sfpztcbqsi .gt_font_normal {
+#jyuwaxxxdx .gt_font_normal {
   font-weight: normal;
 }
 
-#sfpztcbqsi .gt_font_bold {
+#jyuwaxxxdx .gt_font_bold {
   font-weight: bold;
 }
 
-#sfpztcbqsi .gt_font_italic {
+#jyuwaxxxdx .gt_font_italic {
   font-style: italic;
 }
 
-#sfpztcbqsi .gt_super {
+#jyuwaxxxdx .gt_super {
   font-size: 65%;
 }
 
-#sfpztcbqsi .gt_footnote_marks {
+#jyuwaxxxdx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#sfpztcbqsi .gt_asterisk {
+#jyuwaxxxdx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#sfpztcbqsi .gt_indent_1 {
+#jyuwaxxxdx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#sfpztcbqsi .gt_indent_2 {
+#jyuwaxxxdx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#sfpztcbqsi .gt_indent_3 {
+#jyuwaxxxdx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#sfpztcbqsi .gt_indent_4 {
+#jyuwaxxxdx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#sfpztcbqsi .gt_indent_5 {
+#jyuwaxxxdx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#sfpztcbqsi .katex-display {
+#jyuwaxxxdx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#sfpztcbqsi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jyuwaxxxdx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="Period" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Period</th>
@@ -798,7 +792,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>transition_comparisons <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>transition_comparisons <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>comparison_id, <span class="sc">~</span>comparison_label, <span class="sc">~</span>from_period_id, <span class="sc">~</span>to_period_id,</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ref_csn"</span>, <span class="st">"REF → CSN"</span>, <span class="st">"reference_period"</span>, <span class="st">"standard_normal"</span>,</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"csn_rci"</span>, <span class="st">"CSN → RCI"</span>, <span class="st">"standard_normal"</span>, <span class="st">"recent_interval"</span>,</span>
@@ -815,7 +809,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">end =</span> <span class="fl">0.80</span></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  ),</span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  climate_periods<span class="sc">$</span>period_abbr</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -824,7 +818,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ktc_codes_path <span class="ot">&lt;-</span> <span class="fu">path</span>(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ktc_codes_path <span class="ot">&lt;-</span> <span class="fu">path</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"data"</span>,</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"reference"</span>,</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ktc_type_codes.csv"</span></span>
@@ -833,7 +827,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file_exists</span>(ktc_codes_path)) {</span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(</span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Missing data/reference/ktc_type_codes.csv. "</span>,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Run 01-data-acquisition.qmd first."</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Run 02-climate-classification.qmd to generate the reference data."</span></span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
@@ -851,7 +845,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"D"</span>,</span>
 <span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="st">"E"</span>,</span>
 <span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="st">"F"</span></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -860,7 +854,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creates the three grid-cell transition datasets</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creates the three grid-cell transition datasets</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fn_build_transition <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  classification_df,</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  comparison_row</span>
@@ -1446,7 +1440,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-584"><a href="#cb7-584" aria-hidden="true" tabindex="-1"></a>      <span class="at">align =</span> <span class="st">"right"</span>,</span>
 <span id="cb7-585"><a href="#cb7-585" aria-hidden="true" tabindex="-1"></a>      <span class="at">columns =</span> <span class="fu">ends_with</span>(<span class="st">"_pct"</span>)</span>
 <span id="cb7-586"><a href="#cb7-586" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb7-587"><a href="#cb7-587" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-587"><a href="#cb7-587" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -1455,11 +1449,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (run_transition_analysis) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (run_transition_analysis) {</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">file_exists</span>(classification_path)) {</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The classification dataset does not exist. "</span>,</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Run 04-climate-classification.qmd first."</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Run 02-climate-classification.qmd first."</span></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
@@ -1520,7 +1514,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>type_net_change <span class="ot">&lt;-</span> <span class="fu">fn_net_change</span>(</span>
 <span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>  type_transitions,</span>
 <span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>  ktc_levels</span>
-<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -1529,23 +1523,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This summary shows the percentage of global land area whose Köppen–Trewartha classification changes in each pairwise comparison. A type change may occur within the same broad climate group, so type-change percentages can exceed group-change percentages.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="lhcvwnbvsx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lhcvwnbvsx table {
+<div id="bkcaltigel" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bkcaltigel table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lhcvwnbvsx thead, #lhcvwnbvsx tbody, #lhcvwnbvsx tfoot, #lhcvwnbvsx tr, #lhcvwnbvsx td, #lhcvwnbvsx th {
+#bkcaltigel thead, #bkcaltigel tbody, #bkcaltigel tfoot, #bkcaltigel tr, #bkcaltigel td, #bkcaltigel th {
   border-style: none;
 }
 
-#lhcvwnbvsx p {
+#bkcaltigel p {
   margin: 0;
   padding: 0;
 }
 
-#lhcvwnbvsx .gt_table {
+#bkcaltigel .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1571,12 +1565,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_caption {
+#bkcaltigel .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lhcvwnbvsx .gt_title {
+#bkcaltigel .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1588,7 +1582,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#lhcvwnbvsx .gt_subtitle {
+#bkcaltigel .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1600,7 +1594,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#lhcvwnbvsx .gt_heading {
+#bkcaltigel .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1612,13 +1606,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_bottom_border {
+#bkcaltigel .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_col_headings {
+#bkcaltigel .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1633,7 +1627,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_col_heading {
+#bkcaltigel .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1653,7 +1647,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#lhcvwnbvsx .gt_column_spanner_outer {
+#bkcaltigel .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1665,15 +1659,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#lhcvwnbvsx .gt_column_spanner_outer:first-child {
+#bkcaltigel .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lhcvwnbvsx .gt_column_spanner_outer:last-child {
+#bkcaltigel .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lhcvwnbvsx .gt_column_spanner {
+#bkcaltigel .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1685,11 +1679,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#lhcvwnbvsx .gt_spanner_row {
+#bkcaltigel .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lhcvwnbvsx .gt_group_heading {
+#bkcaltigel .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1715,7 +1709,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#lhcvwnbvsx .gt_empty_group_heading {
+#bkcaltigel .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1730,15 +1724,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#lhcvwnbvsx .gt_from_md > :first-child {
+#bkcaltigel .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lhcvwnbvsx .gt_from_md > :last-child {
+#bkcaltigel .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lhcvwnbvsx .gt_row {
+#bkcaltigel .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1757,7 +1751,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#lhcvwnbvsx .gt_stub {
+#bkcaltigel .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1770,7 +1764,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#lhcvwnbvsx .gt_stub_row_group {
+#bkcaltigel .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1784,15 +1778,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#lhcvwnbvsx .gt_row_group_first td {
+#bkcaltigel .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lhcvwnbvsx .gt_row_group_first th {
+#bkcaltigel .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lhcvwnbvsx .gt_summary_row {
+#bkcaltigel .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1802,16 +1796,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#lhcvwnbvsx .gt_first_summary_row {
+#bkcaltigel .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_first_summary_row.thick {
+#bkcaltigel .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lhcvwnbvsx .gt_last_summary_row {
+#bkcaltigel .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1821,7 +1815,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_grand_summary_row {
+#bkcaltigel .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1831,7 +1825,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#lhcvwnbvsx .gt_first_grand_summary_row {
+#bkcaltigel .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1841,7 +1835,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_last_grand_summary_row_top {
+#bkcaltigel .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1851,11 +1845,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_striped {
+#bkcaltigel .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lhcvwnbvsx .gt_table_body {
+#bkcaltigel .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1864,7 +1858,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_footnotes {
+#bkcaltigel .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1878,7 +1872,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_footnote {
+#bkcaltigel .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1887,7 +1881,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#lhcvwnbvsx .gt_sourcenotes {
+#bkcaltigel .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1901,7 +1895,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#lhcvwnbvsx .gt_sourcenote {
+#bkcaltigel .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1909,80 +1903,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#lhcvwnbvsx .gt_left {
+#bkcaltigel .gt_left {
   text-align: left;
 }
 
-#lhcvwnbvsx .gt_center {
+#bkcaltigel .gt_center {
   text-align: center;
 }
 
-#lhcvwnbvsx .gt_right {
+#bkcaltigel .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lhcvwnbvsx .gt_font_normal {
+#bkcaltigel .gt_font_normal {
   font-weight: normal;
 }
 
-#lhcvwnbvsx .gt_font_bold {
+#bkcaltigel .gt_font_bold {
   font-weight: bold;
 }
 
-#lhcvwnbvsx .gt_font_italic {
+#bkcaltigel .gt_font_italic {
   font-style: italic;
 }
 
-#lhcvwnbvsx .gt_super {
+#bkcaltigel .gt_super {
   font-size: 65%;
 }
 
-#lhcvwnbvsx .gt_footnote_marks {
+#bkcaltigel .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lhcvwnbvsx .gt_asterisk {
+#bkcaltigel .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lhcvwnbvsx .gt_indent_1 {
+#bkcaltigel .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lhcvwnbvsx .gt_indent_2 {
+#bkcaltigel .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lhcvwnbvsx .gt_indent_3 {
+#bkcaltigel .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lhcvwnbvsx .gt_indent_4 {
+#bkcaltigel .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lhcvwnbvsx .gt_indent_5 {
+#bkcaltigel .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lhcvwnbvsx .katex-display {
+#bkcaltigel .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lhcvwnbvsx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bkcaltigel div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<th colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border">KTC Classification Change Summary</th>
+<td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border">KTC Classification Change Summary</td>
 </tr>
 <tr class="gt_col_headings even">
 <th id="Comparison" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Comparison</th>
@@ -2023,7 +2017,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>change_overview <span class="sc">|&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>change_overview <span class="sc">|&gt;</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    comparison_label,</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    group_changed_pct,</span>
@@ -2068,12 +2062,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
 <span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="05-transition-analysis_files/figure-html/change-overview-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="03-transition-analysis_files/figure-html/change-overview-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -2084,23 +2078,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The matrices show the share of global land area assigned to each origin and destination climate group. Diagonal cells represent unchanged group assignments; off-diagonal cells represent group transitions.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="rfjuwojcsu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rfjuwojcsu table {
+<div id="xrdrqrbixr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xrdrqrbixr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rfjuwojcsu thead, #rfjuwojcsu tbody, #rfjuwojcsu tfoot, #rfjuwojcsu tr, #rfjuwojcsu td, #rfjuwojcsu th {
+#xrdrqrbixr thead, #xrdrqrbixr tbody, #xrdrqrbixr tfoot, #xrdrqrbixr tr, #xrdrqrbixr td, #xrdrqrbixr th {
   border-style: none;
 }
 
-#rfjuwojcsu p {
+#xrdrqrbixr p {
   margin: 0;
   padding: 0;
 }
 
-#rfjuwojcsu .gt_table {
+#xrdrqrbixr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2126,12 +2120,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_caption {
+#xrdrqrbixr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rfjuwojcsu .gt_title {
+#xrdrqrbixr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2143,7 +2137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#rfjuwojcsu .gt_subtitle {
+#xrdrqrbixr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2155,7 +2149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#rfjuwojcsu .gt_heading {
+#xrdrqrbixr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2167,13 +2161,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_bottom_border {
+#xrdrqrbixr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_col_headings {
+#xrdrqrbixr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2188,7 +2182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_col_heading {
+#xrdrqrbixr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2208,7 +2202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#rfjuwojcsu .gt_column_spanner_outer {
+#xrdrqrbixr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2220,15 +2214,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#rfjuwojcsu .gt_column_spanner_outer:first-child {
+#xrdrqrbixr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rfjuwojcsu .gt_column_spanner_outer:last-child {
+#xrdrqrbixr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rfjuwojcsu .gt_column_spanner {
+#xrdrqrbixr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2240,11 +2234,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#rfjuwojcsu .gt_spanner_row {
+#xrdrqrbixr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rfjuwojcsu .gt_group_heading {
+#xrdrqrbixr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2270,7 +2264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#rfjuwojcsu .gt_empty_group_heading {
+#xrdrqrbixr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2285,15 +2279,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#rfjuwojcsu .gt_from_md > :first-child {
+#xrdrqrbixr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rfjuwojcsu .gt_from_md > :last-child {
+#xrdrqrbixr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rfjuwojcsu .gt_row {
+#xrdrqrbixr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2312,7 +2306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#rfjuwojcsu .gt_stub {
+#xrdrqrbixr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2325,7 +2319,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#rfjuwojcsu .gt_stub_row_group {
+#xrdrqrbixr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2339,15 +2333,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#rfjuwojcsu .gt_row_group_first td {
+#xrdrqrbixr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rfjuwojcsu .gt_row_group_first th {
+#xrdrqrbixr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rfjuwojcsu .gt_summary_row {
+#xrdrqrbixr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2357,16 +2351,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#rfjuwojcsu .gt_first_summary_row {
+#xrdrqrbixr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_first_summary_row.thick {
+#xrdrqrbixr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rfjuwojcsu .gt_last_summary_row {
+#xrdrqrbixr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2376,7 +2370,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_grand_summary_row {
+#xrdrqrbixr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2386,7 +2380,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#rfjuwojcsu .gt_first_grand_summary_row {
+#xrdrqrbixr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2396,7 +2390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_last_grand_summary_row_top {
+#xrdrqrbixr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2406,11 +2400,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_striped {
+#xrdrqrbixr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rfjuwojcsu .gt_table_body {
+#xrdrqrbixr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2419,7 +2413,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_footnotes {
+#xrdrqrbixr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2433,7 +2427,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_footnote {
+#xrdrqrbixr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2442,7 +2436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#rfjuwojcsu .gt_sourcenotes {
+#xrdrqrbixr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2456,7 +2450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#rfjuwojcsu .gt_sourcenote {
+#xrdrqrbixr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2464,77 +2458,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#rfjuwojcsu .gt_left {
+#xrdrqrbixr .gt_left {
   text-align: left;
 }
 
-#rfjuwojcsu .gt_center {
+#xrdrqrbixr .gt_center {
   text-align: center;
 }
 
-#rfjuwojcsu .gt_right {
+#xrdrqrbixr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rfjuwojcsu .gt_font_normal {
+#xrdrqrbixr .gt_font_normal {
   font-weight: normal;
 }
 
-#rfjuwojcsu .gt_font_bold {
+#xrdrqrbixr .gt_font_bold {
   font-weight: bold;
 }
 
-#rfjuwojcsu .gt_font_italic {
+#xrdrqrbixr .gt_font_italic {
   font-style: italic;
 }
 
-#rfjuwojcsu .gt_super {
+#xrdrqrbixr .gt_super {
   font-size: 65%;
 }
 
-#rfjuwojcsu .gt_footnote_marks {
+#xrdrqrbixr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rfjuwojcsu .gt_asterisk {
+#xrdrqrbixr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rfjuwojcsu .gt_indent_1 {
+#xrdrqrbixr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rfjuwojcsu .gt_indent_2 {
+#xrdrqrbixr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rfjuwojcsu .gt_indent_3 {
+#xrdrqrbixr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rfjuwojcsu .gt_indent_4 {
+#xrdrqrbixr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rfjuwojcsu .gt_indent_5 {
+#xrdrqrbixr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rfjuwojcsu .katex-display {
+#xrdrqrbixr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rfjuwojcsu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xrdrqrbixr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 14%">
@@ -2546,10 +2540,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="7" class="gt_heading gt_title gt_font_normal">KTC Group Transition Matrix</th>
+<td colspan="7" class="gt_heading gt_title gt_font_normal">KTC Group Transition Matrix</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → CSN — percent of global land area</th>
+<td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → CSN — percent of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">From</th>
@@ -2568,7 +2562,7 @@ To
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">A</td>
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">A</th>
 <td class="gt_row gt_right" headers="stub_1_1 A">—</td>
 <td class="gt_row gt_right" headers="stub_1_1 B">0.73%</td>
 <td class="gt_row gt_right" headers="stub_1_1 C">0.03%</td>
@@ -2577,7 +2571,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_1 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">B</td>
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">B</th>
 <td class="gt_row gt_right" headers="stub_1_2 A">0.16%</td>
 <td class="gt_row gt_right" headers="stub_1_2 B">—</td>
 <td class="gt_row gt_right" headers="stub_1_2 C">0.07%</td>
@@ -2586,7 +2580,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_2 F">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">C</td>
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">C</th>
 <td class="gt_row gt_right" headers="stub_1_3 A">0.54%</td>
 <td class="gt_row gt_right" headers="stub_1_3 B">0.36%</td>
 <td class="gt_row gt_right" headers="stub_1_3 C">—</td>
@@ -2595,7 +2589,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_3 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">D</td>
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">D</th>
 <td class="gt_row gt_right" headers="stub_1_4 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_4 B">0.76%</td>
 <td class="gt_row gt_right" headers="stub_1_4 C">0.56%</td>
@@ -2604,7 +2598,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_4 F">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">E</td>
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">E</th>
 <td class="gt_row gt_right" headers="stub_1_5 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 B">0.06%</td>
 <td class="gt_row gt_right" headers="stub_1_5 C">0.00%</td>
@@ -2613,7 +2607,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_5 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">F</td>
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">F</th>
 <td class="gt_row gt_right" headers="stub_1_6 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 B">0.03%</td>
 <td class="gt_row gt_right" headers="stub_1_6 C">0.00%</td>
@@ -2627,23 +2621,23 @@ To
 </div>
 </div>
 <div class="cell-output-display">
-<div id="dpjntqxptg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dpjntqxptg table {
+<div id="recccwvclu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#recccwvclu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dpjntqxptg thead, #dpjntqxptg tbody, #dpjntqxptg tfoot, #dpjntqxptg tr, #dpjntqxptg td, #dpjntqxptg th {
+#recccwvclu thead, #recccwvclu tbody, #recccwvclu tfoot, #recccwvclu tr, #recccwvclu td, #recccwvclu th {
   border-style: none;
 }
 
-#dpjntqxptg p {
+#recccwvclu p {
   margin: 0;
   padding: 0;
 }
 
-#dpjntqxptg .gt_table {
+#recccwvclu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2669,12 +2663,12 @@ To
   border-left-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_caption {
+#recccwvclu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dpjntqxptg .gt_title {
+#recccwvclu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2686,7 +2680,7 @@ To
   border-bottom-width: 0;
 }
 
-#dpjntqxptg .gt_subtitle {
+#recccwvclu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2698,7 +2692,7 @@ To
   border-top-width: 0;
 }
 
-#dpjntqxptg .gt_heading {
+#recccwvclu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2710,13 +2704,13 @@ To
   border-right-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_bottom_border {
+#recccwvclu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_col_headings {
+#recccwvclu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2731,7 +2725,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_col_heading {
+#recccwvclu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2751,7 +2745,7 @@ To
   overflow-x: hidden;
 }
 
-#dpjntqxptg .gt_column_spanner_outer {
+#recccwvclu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2763,15 +2757,15 @@ To
   padding-right: 4px;
 }
 
-#dpjntqxptg .gt_column_spanner_outer:first-child {
+#recccwvclu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dpjntqxptg .gt_column_spanner_outer:last-child {
+#recccwvclu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dpjntqxptg .gt_column_spanner {
+#recccwvclu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2783,11 +2777,11 @@ To
   width: 100%;
 }
 
-#dpjntqxptg .gt_spanner_row {
+#recccwvclu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dpjntqxptg .gt_group_heading {
+#recccwvclu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2813,7 +2807,7 @@ To
   text-align: left;
 }
 
-#dpjntqxptg .gt_empty_group_heading {
+#recccwvclu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2828,15 +2822,15 @@ To
   vertical-align: middle;
 }
 
-#dpjntqxptg .gt_from_md > :first-child {
+#recccwvclu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dpjntqxptg .gt_from_md > :last-child {
+#recccwvclu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dpjntqxptg .gt_row {
+#recccwvclu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2855,7 +2849,7 @@ To
   overflow-x: hidden;
 }
 
-#dpjntqxptg .gt_stub {
+#recccwvclu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2868,7 +2862,7 @@ To
   padding-right: 5px;
 }
 
-#dpjntqxptg .gt_stub_row_group {
+#recccwvclu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2882,15 +2876,15 @@ To
   vertical-align: top;
 }
 
-#dpjntqxptg .gt_row_group_first td {
+#recccwvclu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dpjntqxptg .gt_row_group_first th {
+#recccwvclu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dpjntqxptg .gt_summary_row {
+#recccwvclu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2900,16 +2894,16 @@ To
   padding-right: 5px;
 }
 
-#dpjntqxptg .gt_first_summary_row {
+#recccwvclu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_first_summary_row.thick {
+#recccwvclu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dpjntqxptg .gt_last_summary_row {
+#recccwvclu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2919,7 +2913,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_grand_summary_row {
+#recccwvclu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2929,7 +2923,7 @@ To
   padding-right: 5px;
 }
 
-#dpjntqxptg .gt_first_grand_summary_row {
+#recccwvclu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2939,7 +2933,7 @@ To
   border-top-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_last_grand_summary_row_top {
+#recccwvclu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2949,11 +2943,11 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_striped {
+#recccwvclu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dpjntqxptg .gt_table_body {
+#recccwvclu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2962,7 +2956,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_footnotes {
+#recccwvclu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2976,7 +2970,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_footnote {
+#recccwvclu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2985,7 +2979,7 @@ To
   padding-right: 5px;
 }
 
-#dpjntqxptg .gt_sourcenotes {
+#recccwvclu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2999,7 +2993,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#dpjntqxptg .gt_sourcenote {
+#recccwvclu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3007,77 +3001,77 @@ To
   padding-right: 5px;
 }
 
-#dpjntqxptg .gt_left {
+#recccwvclu .gt_left {
   text-align: left;
 }
 
-#dpjntqxptg .gt_center {
+#recccwvclu .gt_center {
   text-align: center;
 }
 
-#dpjntqxptg .gt_right {
+#recccwvclu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dpjntqxptg .gt_font_normal {
+#recccwvclu .gt_font_normal {
   font-weight: normal;
 }
 
-#dpjntqxptg .gt_font_bold {
+#recccwvclu .gt_font_bold {
   font-weight: bold;
 }
 
-#dpjntqxptg .gt_font_italic {
+#recccwvclu .gt_font_italic {
   font-style: italic;
 }
 
-#dpjntqxptg .gt_super {
+#recccwvclu .gt_super {
   font-size: 65%;
 }
 
-#dpjntqxptg .gt_footnote_marks {
+#recccwvclu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dpjntqxptg .gt_asterisk {
+#recccwvclu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dpjntqxptg .gt_indent_1 {
+#recccwvclu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dpjntqxptg .gt_indent_2 {
+#recccwvclu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dpjntqxptg .gt_indent_3 {
+#recccwvclu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dpjntqxptg .gt_indent_4 {
+#recccwvclu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dpjntqxptg .gt_indent_5 {
+#recccwvclu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dpjntqxptg .katex-display {
+#recccwvclu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dpjntqxptg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#recccwvclu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 14%">
@@ -3089,10 +3083,10 @@ To
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="7" class="gt_heading gt_title gt_font_normal">KTC Group Transition Matrix</th>
+<td colspan="7" class="gt_heading gt_title gt_font_normal">KTC Group Transition Matrix</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">CSN → RCI — percent of global land area</th>
+<td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">CSN → RCI — percent of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">From</th>
@@ -3111,7 +3105,7 @@ To
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">A</td>
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">A</th>
 <td class="gt_row gt_right" headers="stub_1_1 A">—</td>
 <td class="gt_row gt_right" headers="stub_1_1 B">1.16%</td>
 <td class="gt_row gt_right" headers="stub_1_1 C">0.08%</td>
@@ -3120,7 +3114,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_1 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">B</td>
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">B</th>
 <td class="gt_row gt_right" headers="stub_1_2 A">0.49%</td>
 <td class="gt_row gt_right" headers="stub_1_2 B">—</td>
 <td class="gt_row gt_right" headers="stub_1_2 C">0.37%</td>
@@ -3129,7 +3123,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_2 F">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">C</td>
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">C</th>
 <td class="gt_row gt_right" headers="stub_1_3 A">0.31%</td>
 <td class="gt_row gt_right" headers="stub_1_3 B">0.82%</td>
 <td class="gt_row gt_right" headers="stub_1_3 C">—</td>
@@ -3138,7 +3132,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_3 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">D</td>
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">D</th>
 <td class="gt_row gt_right" headers="stub_1_4 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_4 B">0.46%</td>
 <td class="gt_row gt_right" headers="stub_1_4 C">0.73%</td>
@@ -3147,7 +3141,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_4 F">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">E</td>
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">E</th>
 <td class="gt_row gt_right" headers="stub_1_5 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 B">0.03%</td>
 <td class="gt_row gt_right" headers="stub_1_5 C">0.00%</td>
@@ -3156,7 +3150,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_5 F">0.09%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">F</td>
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">F</th>
 <td class="gt_row gt_right" headers="stub_1_6 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 B">0.02%</td>
 <td class="gt_row gt_right" headers="stub_1_6 C">0.00%</td>
@@ -3170,23 +3164,23 @@ To
 </div>
 </div>
 <div class="cell-output-display">
-<div id="sgoboflrvi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sgoboflrvi table {
+<div id="yyyejyhkzg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yyyejyhkzg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sgoboflrvi thead, #sgoboflrvi tbody, #sgoboflrvi tfoot, #sgoboflrvi tr, #sgoboflrvi td, #sgoboflrvi th {
+#yyyejyhkzg thead, #yyyejyhkzg tbody, #yyyejyhkzg tfoot, #yyyejyhkzg tr, #yyyejyhkzg td, #yyyejyhkzg th {
   border-style: none;
 }
 
-#sgoboflrvi p {
+#yyyejyhkzg p {
   margin: 0;
   padding: 0;
 }
 
-#sgoboflrvi .gt_table {
+#yyyejyhkzg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3212,12 +3206,12 @@ To
   border-left-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_caption {
+#yyyejyhkzg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#sgoboflrvi .gt_title {
+#yyyejyhkzg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3229,7 +3223,7 @@ To
   border-bottom-width: 0;
 }
 
-#sgoboflrvi .gt_subtitle {
+#yyyejyhkzg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3241,7 +3235,7 @@ To
   border-top-width: 0;
 }
 
-#sgoboflrvi .gt_heading {
+#yyyejyhkzg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3253,13 +3247,13 @@ To
   border-right-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_bottom_border {
+#yyyejyhkzg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_col_headings {
+#yyyejyhkzg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3274,7 +3268,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_col_heading {
+#yyyejyhkzg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3294,7 +3288,7 @@ To
   overflow-x: hidden;
 }
 
-#sgoboflrvi .gt_column_spanner_outer {
+#yyyejyhkzg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3306,15 +3300,15 @@ To
   padding-right: 4px;
 }
 
-#sgoboflrvi .gt_column_spanner_outer:first-child {
+#yyyejyhkzg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sgoboflrvi .gt_column_spanner_outer:last-child {
+#yyyejyhkzg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sgoboflrvi .gt_column_spanner {
+#yyyejyhkzg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3326,11 +3320,11 @@ To
   width: 100%;
 }
 
-#sgoboflrvi .gt_spanner_row {
+#yyyejyhkzg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#sgoboflrvi .gt_group_heading {
+#yyyejyhkzg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3356,7 +3350,7 @@ To
   text-align: left;
 }
 
-#sgoboflrvi .gt_empty_group_heading {
+#yyyejyhkzg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3371,15 +3365,15 @@ To
   vertical-align: middle;
 }
 
-#sgoboflrvi .gt_from_md > :first-child {
+#yyyejyhkzg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sgoboflrvi .gt_from_md > :last-child {
+#yyyejyhkzg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sgoboflrvi .gt_row {
+#yyyejyhkzg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3398,7 +3392,7 @@ To
   overflow-x: hidden;
 }
 
-#sgoboflrvi .gt_stub {
+#yyyejyhkzg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3411,7 +3405,7 @@ To
   padding-right: 5px;
 }
 
-#sgoboflrvi .gt_stub_row_group {
+#yyyejyhkzg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3425,15 +3419,15 @@ To
   vertical-align: top;
 }
 
-#sgoboflrvi .gt_row_group_first td {
+#yyyejyhkzg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#sgoboflrvi .gt_row_group_first th {
+#yyyejyhkzg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#sgoboflrvi .gt_summary_row {
+#yyyejyhkzg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3443,16 +3437,16 @@ To
   padding-right: 5px;
 }
 
-#sgoboflrvi .gt_first_summary_row {
+#yyyejyhkzg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_first_summary_row.thick {
+#yyyejyhkzg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#sgoboflrvi .gt_last_summary_row {
+#yyyejyhkzg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3462,7 +3456,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_grand_summary_row {
+#yyyejyhkzg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3472,7 +3466,7 @@ To
   padding-right: 5px;
 }
 
-#sgoboflrvi .gt_first_grand_summary_row {
+#yyyejyhkzg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3482,7 +3476,7 @@ To
   border-top-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_last_grand_summary_row_top {
+#yyyejyhkzg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3492,11 +3486,11 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_striped {
+#yyyejyhkzg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sgoboflrvi .gt_table_body {
+#yyyejyhkzg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3505,7 +3499,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_footnotes {
+#yyyejyhkzg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3519,7 +3513,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_footnote {
+#yyyejyhkzg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3528,7 +3522,7 @@ To
   padding-right: 5px;
 }
 
-#sgoboflrvi .gt_sourcenotes {
+#yyyejyhkzg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3542,7 +3536,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#sgoboflrvi .gt_sourcenote {
+#yyyejyhkzg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3550,77 +3544,77 @@ To
   padding-right: 5px;
 }
 
-#sgoboflrvi .gt_left {
+#yyyejyhkzg .gt_left {
   text-align: left;
 }
 
-#sgoboflrvi .gt_center {
+#yyyejyhkzg .gt_center {
   text-align: center;
 }
 
-#sgoboflrvi .gt_right {
+#yyyejyhkzg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sgoboflrvi .gt_font_normal {
+#yyyejyhkzg .gt_font_normal {
   font-weight: normal;
 }
 
-#sgoboflrvi .gt_font_bold {
+#yyyejyhkzg .gt_font_bold {
   font-weight: bold;
 }
 
-#sgoboflrvi .gt_font_italic {
+#yyyejyhkzg .gt_font_italic {
   font-style: italic;
 }
 
-#sgoboflrvi .gt_super {
+#yyyejyhkzg .gt_super {
   font-size: 65%;
 }
 
-#sgoboflrvi .gt_footnote_marks {
+#yyyejyhkzg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#sgoboflrvi .gt_asterisk {
+#yyyejyhkzg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#sgoboflrvi .gt_indent_1 {
+#yyyejyhkzg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#sgoboflrvi .gt_indent_2 {
+#yyyejyhkzg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#sgoboflrvi .gt_indent_3 {
+#yyyejyhkzg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#sgoboflrvi .gt_indent_4 {
+#yyyejyhkzg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#sgoboflrvi .gt_indent_5 {
+#yyyejyhkzg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#sgoboflrvi .katex-display {
+#yyyejyhkzg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#sgoboflrvi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#yyyejyhkzg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 14%">
@@ -3632,10 +3626,10 @@ To
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="7" class="gt_heading gt_title gt_font_normal">KTC Group Transition Matrix</th>
+<td colspan="7" class="gt_heading gt_title gt_font_normal">KTC Group Transition Matrix</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → RCI — percent of global land area</th>
+<td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → RCI — percent of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">From</th>
@@ -3654,7 +3648,7 @@ To
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">A</td>
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">A</th>
 <td class="gt_row gt_right" headers="stub_1_1 A">—</td>
 <td class="gt_row gt_right" headers="stub_1_1 B">1.72%</td>
 <td class="gt_row gt_right" headers="stub_1_1 C">0.02%</td>
@@ -3663,7 +3657,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_1 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">B</td>
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">B</th>
 <td class="gt_row gt_right" headers="stub_1_2 A">0.51%</td>
 <td class="gt_row gt_right" headers="stub_1_2 B">—</td>
 <td class="gt_row gt_right" headers="stub_1_2 C">0.22%</td>
@@ -3672,7 +3666,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_2 F">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">C</td>
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">C</th>
 <td class="gt_row gt_right" headers="stub_1_3 A">0.72%</td>
 <td class="gt_row gt_right" headers="stub_1_3 B">0.97%</td>
 <td class="gt_row gt_right" headers="stub_1_3 C">—</td>
@@ -3681,7 +3675,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_3 F">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">D</td>
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">D</th>
 <td class="gt_row gt_right" headers="stub_1_4 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_4 B">0.99%</td>
 <td class="gt_row gt_right" headers="stub_1_4 C">1.25%</td>
@@ -3690,7 +3684,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_4 F">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">E</td>
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">E</th>
 <td class="gt_row gt_right" headers="stub_1_5 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 B">0.07%</td>
 <td class="gt_row gt_right" headers="stub_1_5 C">0.01%</td>
@@ -3699,7 +3693,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_5 F">0.01%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">F</td>
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">F</th>
 <td class="gt_row gt_right" headers="stub_1_6 A">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 B">0.05%</td>
 <td class="gt_row gt_right" headers="stub_1_6 C">0.01%</td>
@@ -3719,23 +3713,23 @@ To
 <p>The matrices show transitions among the Köppen–Trewartha climate types. Diagonal cells are suppressed to emphasize land area that changed classification.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fhzyfcjxvv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fhzyfcjxvv table {
+<div id="npmexztyrf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#npmexztyrf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fhzyfcjxvv thead, #fhzyfcjxvv tbody, #fhzyfcjxvv tfoot, #fhzyfcjxvv tr, #fhzyfcjxvv td, #fhzyfcjxvv th {
+#npmexztyrf thead, #npmexztyrf tbody, #npmexztyrf tfoot, #npmexztyrf tr, #npmexztyrf td, #npmexztyrf th {
   border-style: none;
 }
 
-#fhzyfcjxvv p {
+#npmexztyrf p {
   margin: 0;
   padding: 0;
 }
 
-#fhzyfcjxvv .gt_table {
+#npmexztyrf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3761,12 +3755,12 @@ To
   border-left-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_caption {
+#npmexztyrf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fhzyfcjxvv .gt_title {
+#npmexztyrf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3778,7 +3772,7 @@ To
   border-bottom-width: 0;
 }
 
-#fhzyfcjxvv .gt_subtitle {
+#npmexztyrf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3790,7 +3784,7 @@ To
   border-top-width: 0;
 }
 
-#fhzyfcjxvv .gt_heading {
+#npmexztyrf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3802,13 +3796,13 @@ To
   border-right-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_bottom_border {
+#npmexztyrf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_col_headings {
+#npmexztyrf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3823,7 +3817,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_col_heading {
+#npmexztyrf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3843,7 +3837,7 @@ To
   overflow-x: hidden;
 }
 
-#fhzyfcjxvv .gt_column_spanner_outer {
+#npmexztyrf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3855,15 +3849,15 @@ To
   padding-right: 4px;
 }
 
-#fhzyfcjxvv .gt_column_spanner_outer:first-child {
+#npmexztyrf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fhzyfcjxvv .gt_column_spanner_outer:last-child {
+#npmexztyrf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fhzyfcjxvv .gt_column_spanner {
+#npmexztyrf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3875,11 +3869,11 @@ To
   width: 100%;
 }
 
-#fhzyfcjxvv .gt_spanner_row {
+#npmexztyrf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fhzyfcjxvv .gt_group_heading {
+#npmexztyrf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3905,7 +3899,7 @@ To
   text-align: left;
 }
 
-#fhzyfcjxvv .gt_empty_group_heading {
+#npmexztyrf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3920,15 +3914,15 @@ To
   vertical-align: middle;
 }
 
-#fhzyfcjxvv .gt_from_md > :first-child {
+#npmexztyrf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fhzyfcjxvv .gt_from_md > :last-child {
+#npmexztyrf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fhzyfcjxvv .gt_row {
+#npmexztyrf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3947,7 +3941,7 @@ To
   overflow-x: hidden;
 }
 
-#fhzyfcjxvv .gt_stub {
+#npmexztyrf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3960,7 +3954,7 @@ To
   padding-right: 5px;
 }
 
-#fhzyfcjxvv .gt_stub_row_group {
+#npmexztyrf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3974,15 +3968,15 @@ To
   vertical-align: top;
 }
 
-#fhzyfcjxvv .gt_row_group_first td {
+#npmexztyrf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fhzyfcjxvv .gt_row_group_first th {
+#npmexztyrf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fhzyfcjxvv .gt_summary_row {
+#npmexztyrf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3992,16 +3986,16 @@ To
   padding-right: 5px;
 }
 
-#fhzyfcjxvv .gt_first_summary_row {
+#npmexztyrf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_first_summary_row.thick {
+#npmexztyrf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fhzyfcjxvv .gt_last_summary_row {
+#npmexztyrf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4011,7 +4005,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_grand_summary_row {
+#npmexztyrf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4021,7 +4015,7 @@ To
   padding-right: 5px;
 }
 
-#fhzyfcjxvv .gt_first_grand_summary_row {
+#npmexztyrf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4031,7 +4025,7 @@ To
   border-top-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_last_grand_summary_row_top {
+#npmexztyrf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4041,11 +4035,11 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_striped {
+#npmexztyrf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fhzyfcjxvv .gt_table_body {
+#npmexztyrf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4054,7 +4048,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_footnotes {
+#npmexztyrf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4068,7 +4062,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_footnote {
+#npmexztyrf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4077,7 +4071,7 @@ To
   padding-right: 5px;
 }
 
-#fhzyfcjxvv .gt_sourcenotes {
+#npmexztyrf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4091,7 +4085,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#fhzyfcjxvv .gt_sourcenote {
+#npmexztyrf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4099,77 +4093,77 @@ To
   padding-right: 5px;
 }
 
-#fhzyfcjxvv .gt_left {
+#npmexztyrf .gt_left {
   text-align: left;
 }
 
-#fhzyfcjxvv .gt_center {
+#npmexztyrf .gt_center {
   text-align: center;
 }
 
-#fhzyfcjxvv .gt_right {
+#npmexztyrf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fhzyfcjxvv .gt_font_normal {
+#npmexztyrf .gt_font_normal {
   font-weight: normal;
 }
 
-#fhzyfcjxvv .gt_font_bold {
+#npmexztyrf .gt_font_bold {
   font-weight: bold;
 }
 
-#fhzyfcjxvv .gt_font_italic {
+#npmexztyrf .gt_font_italic {
   font-style: italic;
 }
 
-#fhzyfcjxvv .gt_super {
+#npmexztyrf .gt_super {
   font-size: 65%;
 }
 
-#fhzyfcjxvv .gt_footnote_marks {
+#npmexztyrf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fhzyfcjxvv .gt_asterisk {
+#npmexztyrf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fhzyfcjxvv .gt_indent_1 {
+#npmexztyrf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fhzyfcjxvv .gt_indent_2 {
+#npmexztyrf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fhzyfcjxvv .gt_indent_3 {
+#npmexztyrf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fhzyfcjxvv .gt_indent_4 {
+#npmexztyrf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fhzyfcjxvv .gt_indent_5 {
+#npmexztyrf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fhzyfcjxvv .katex-display {
+#npmexztyrf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fhzyfcjxvv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#npmexztyrf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 7%">
 <col style="width: 7%">
@@ -4188,10 +4182,10 @@ To
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="14" class="gt_heading gt_title gt_font_normal">KTC Type Transition Matrix</th>
+<td colspan="14" class="gt_heading gt_title gt_font_normal">KTC Type Transition Matrix</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → CSN — percent of global land area</th>
+<td colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → CSN — percent of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">From</th>
@@ -4217,7 +4211,7 @@ To
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</td>
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</th>
 <td class="gt_row gt_right" headers="stub_1_1 Ar">—</td>
 <td class="gt_row gt_right" headers="stub_1_1 Aw">0.93%</td>
 <td class="gt_row gt_right" headers="stub_1_1 BW">0.00%</td>
@@ -4233,7 +4227,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_1 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</td>
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</th>
 <td class="gt_row gt_right" headers="stub_1_2 Ar">0.12%</td>
 <td class="gt_row gt_right" headers="stub_1_2 Aw">—</td>
 <td class="gt_row gt_right" headers="stub_1_2 BW">0.00%</td>
@@ -4249,7 +4243,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_2 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BW</td>
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BW</th>
 <td class="gt_row gt_right" headers="stub_1_3 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 BW">—</td>
@@ -4265,7 +4259,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_3 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BS</td>
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BS</th>
 <td class="gt_row gt_right" headers="stub_1_4 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_4 Aw">0.16%</td>
 <td class="gt_row gt_right" headers="stub_1_4 BW">0.99%</td>
@@ -4281,7 +4275,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_4 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</td>
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</th>
 <td class="gt_row gt_right" headers="stub_1_5 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 BW">0.00%</td>
@@ -4297,7 +4291,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_5 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</td>
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</th>
 <td class="gt_row gt_right" headers="stub_1_6 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 Aw">0.14%</td>
 <td class="gt_row gt_right" headers="stub_1_6 BW">0.00%</td>
@@ -4313,7 +4307,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_6 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</td>
+<th id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</th>
 <td class="gt_row gt_right" headers="stub_1_7 Ar">0.13%</td>
 <td class="gt_row gt_right" headers="stub_1_7 Aw">0.28%</td>
 <td class="gt_row gt_right" headers="stub_1_7 BW">0.00%</td>
@@ -4329,7 +4323,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_7 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Do</td>
+<th id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Do</th>
 <td class="gt_row gt_right" headers="stub_1_8 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_8 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_8 BW">0.00%</td>
@@ -4345,7 +4339,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_8 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</td>
+<th id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</th>
 <td class="gt_row gt_right" headers="stub_1_9 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_9 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_9 BW">0.00%</td>
@@ -4361,7 +4355,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_9 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</td>
+<th id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</th>
 <td class="gt_row gt_right" headers="stub_1_10 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_10 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_10 BW">0.00%</td>
@@ -4377,7 +4371,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_10 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</td>
+<th id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</th>
 <td class="gt_row gt_right" headers="stub_1_11 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_11 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_11 BW">0.00%</td>
@@ -4393,7 +4387,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_11 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</td>
+<th id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</th>
 <td class="gt_row gt_right" headers="stub_1_12 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_12 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_12 BW">0.01%</td>
@@ -4409,7 +4403,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_12 Fi">0.01%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</td>
+<th id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</th>
 <td class="gt_row gt_right" headers="stub_1_13 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_13 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_13 BW">0.00%</td>
@@ -4430,23 +4424,23 @@ To
 </div>
 </div>
 <div class="cell-output-display">
-<div id="typtuvfoet" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#typtuvfoet table {
+<div id="atxihqnagt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#atxihqnagt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#typtuvfoet thead, #typtuvfoet tbody, #typtuvfoet tfoot, #typtuvfoet tr, #typtuvfoet td, #typtuvfoet th {
+#atxihqnagt thead, #atxihqnagt tbody, #atxihqnagt tfoot, #atxihqnagt tr, #atxihqnagt td, #atxihqnagt th {
   border-style: none;
 }
 
-#typtuvfoet p {
+#atxihqnagt p {
   margin: 0;
   padding: 0;
 }
 
-#typtuvfoet .gt_table {
+#atxihqnagt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -4472,12 +4466,12 @@ To
   border-left-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_caption {
+#atxihqnagt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#typtuvfoet .gt_title {
+#atxihqnagt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4489,7 +4483,7 @@ To
   border-bottom-width: 0;
 }
 
-#typtuvfoet .gt_subtitle {
+#atxihqnagt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4501,7 +4495,7 @@ To
   border-top-width: 0;
 }
 
-#typtuvfoet .gt_heading {
+#atxihqnagt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -4513,13 +4507,13 @@ To
   border-right-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_bottom_border {
+#atxihqnagt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_col_headings {
+#atxihqnagt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4534,7 +4528,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_col_heading {
+#atxihqnagt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4554,7 +4548,7 @@ To
   overflow-x: hidden;
 }
 
-#typtuvfoet .gt_column_spanner_outer {
+#atxihqnagt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4566,15 +4560,15 @@ To
   padding-right: 4px;
 }
 
-#typtuvfoet .gt_column_spanner_outer:first-child {
+#atxihqnagt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#typtuvfoet .gt_column_spanner_outer:last-child {
+#atxihqnagt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#typtuvfoet .gt_column_spanner {
+#atxihqnagt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4586,11 +4580,11 @@ To
   width: 100%;
 }
 
-#typtuvfoet .gt_spanner_row {
+#atxihqnagt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#typtuvfoet .gt_group_heading {
+#atxihqnagt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4616,7 +4610,7 @@ To
   text-align: left;
 }
 
-#typtuvfoet .gt_empty_group_heading {
+#atxihqnagt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4631,15 +4625,15 @@ To
   vertical-align: middle;
 }
 
-#typtuvfoet .gt_from_md > :first-child {
+#atxihqnagt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#typtuvfoet .gt_from_md > :last-child {
+#atxihqnagt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#typtuvfoet .gt_row {
+#atxihqnagt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4658,7 +4652,7 @@ To
   overflow-x: hidden;
 }
 
-#typtuvfoet .gt_stub {
+#atxihqnagt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4671,7 +4665,7 @@ To
   padding-right: 5px;
 }
 
-#typtuvfoet .gt_stub_row_group {
+#atxihqnagt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4685,15 +4679,15 @@ To
   vertical-align: top;
 }
 
-#typtuvfoet .gt_row_group_first td {
+#atxihqnagt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#typtuvfoet .gt_row_group_first th {
+#atxihqnagt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#typtuvfoet .gt_summary_row {
+#atxihqnagt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4703,16 +4697,16 @@ To
   padding-right: 5px;
 }
 
-#typtuvfoet .gt_first_summary_row {
+#atxihqnagt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_first_summary_row.thick {
+#atxihqnagt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#typtuvfoet .gt_last_summary_row {
+#atxihqnagt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4722,7 +4716,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_grand_summary_row {
+#atxihqnagt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4732,7 +4726,7 @@ To
   padding-right: 5px;
 }
 
-#typtuvfoet .gt_first_grand_summary_row {
+#atxihqnagt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4742,7 +4736,7 @@ To
   border-top-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_last_grand_summary_row_top {
+#atxihqnagt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4752,11 +4746,11 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_striped {
+#atxihqnagt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#typtuvfoet .gt_table_body {
+#atxihqnagt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4765,7 +4759,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_footnotes {
+#atxihqnagt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4779,7 +4773,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_footnote {
+#atxihqnagt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4788,7 +4782,7 @@ To
   padding-right: 5px;
 }
 
-#typtuvfoet .gt_sourcenotes {
+#atxihqnagt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4802,7 +4796,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#typtuvfoet .gt_sourcenote {
+#atxihqnagt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4810,77 +4804,77 @@ To
   padding-right: 5px;
 }
 
-#typtuvfoet .gt_left {
+#atxihqnagt .gt_left {
   text-align: left;
 }
 
-#typtuvfoet .gt_center {
+#atxihqnagt .gt_center {
   text-align: center;
 }
 
-#typtuvfoet .gt_right {
+#atxihqnagt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#typtuvfoet .gt_font_normal {
+#atxihqnagt .gt_font_normal {
   font-weight: normal;
 }
 
-#typtuvfoet .gt_font_bold {
+#atxihqnagt .gt_font_bold {
   font-weight: bold;
 }
 
-#typtuvfoet .gt_font_italic {
+#atxihqnagt .gt_font_italic {
   font-style: italic;
 }
 
-#typtuvfoet .gt_super {
+#atxihqnagt .gt_super {
   font-size: 65%;
 }
 
-#typtuvfoet .gt_footnote_marks {
+#atxihqnagt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#typtuvfoet .gt_asterisk {
+#atxihqnagt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#typtuvfoet .gt_indent_1 {
+#atxihqnagt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#typtuvfoet .gt_indent_2 {
+#atxihqnagt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#typtuvfoet .gt_indent_3 {
+#atxihqnagt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#typtuvfoet .gt_indent_4 {
+#atxihqnagt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#typtuvfoet .gt_indent_5 {
+#atxihqnagt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#typtuvfoet .katex-display {
+#atxihqnagt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#typtuvfoet div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#atxihqnagt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 7%">
 <col style="width: 7%">
@@ -4899,10 +4893,10 @@ To
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="14" class="gt_heading gt_title gt_font_normal">KTC Type Transition Matrix</th>
+<td colspan="14" class="gt_heading gt_title gt_font_normal">KTC Type Transition Matrix</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">CSN → RCI — percent of global land area</th>
+<td colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">CSN → RCI — percent of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">From</th>
@@ -4928,7 +4922,7 @@ To
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</td>
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</th>
 <td class="gt_row gt_right" headers="stub_1_1 Ar">—</td>
 <td class="gt_row gt_right" headers="stub_1_1 Aw">1.42%</td>
 <td class="gt_row gt_right" headers="stub_1_1 BW">0.00%</td>
@@ -4944,7 +4938,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_1 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</td>
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</th>
 <td class="gt_row gt_right" headers="stub_1_2 Ar">0.26%</td>
 <td class="gt_row gt_right" headers="stub_1_2 Aw">—</td>
 <td class="gt_row gt_right" headers="stub_1_2 BW">0.00%</td>
@@ -4960,7 +4954,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_2 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BW</td>
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BW</th>
 <td class="gt_row gt_right" headers="stub_1_3 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 BW">—</td>
@@ -4976,7 +4970,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_3 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BS</td>
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BS</th>
 <td class="gt_row gt_right" headers="stub_1_4 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_4 Aw">0.49%</td>
 <td class="gt_row gt_right" headers="stub_1_4 BW">1.72%</td>
@@ -4992,7 +4986,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_4 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</td>
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</th>
 <td class="gt_row gt_right" headers="stub_1_5 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 BW">0.00%</td>
@@ -5008,7 +5002,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_5 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</td>
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</th>
 <td class="gt_row gt_right" headers="stub_1_6 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 Aw">0.04%</td>
 <td class="gt_row gt_right" headers="stub_1_6 BW">0.00%</td>
@@ -5024,7 +5018,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_6 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</td>
+<th id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</th>
 <td class="gt_row gt_right" headers="stub_1_7 Ar">0.09%</td>
 <td class="gt_row gt_right" headers="stub_1_7 Aw">0.18%</td>
 <td class="gt_row gt_right" headers="stub_1_7 BW">0.00%</td>
@@ -5040,7 +5034,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_7 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Do</td>
+<th id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Do</th>
 <td class="gt_row gt_right" headers="stub_1_8 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_8 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_8 BW">0.00%</td>
@@ -5056,7 +5050,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_8 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</td>
+<th id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</th>
 <td class="gt_row gt_right" headers="stub_1_9 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_9 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_9 BW">0.00%</td>
@@ -5072,7 +5066,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_9 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</td>
+<th id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</th>
 <td class="gt_row gt_right" headers="stub_1_10 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_10 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_10 BW">0.00%</td>
@@ -5088,7 +5082,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_10 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</td>
+<th id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</th>
 <td class="gt_row gt_right" headers="stub_1_11 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_11 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_11 BW">0.00%</td>
@@ -5104,7 +5098,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_11 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</td>
+<th id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</th>
 <td class="gt_row gt_right" headers="stub_1_12 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_12 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_12 BW">0.00%</td>
@@ -5120,7 +5114,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_12 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</td>
+<th id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</th>
 <td class="gt_row gt_right" headers="stub_1_13 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_13 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_13 BW">0.00%</td>
@@ -5141,23 +5135,23 @@ To
 </div>
 </div>
 <div class="cell-output-display">
-<div id="hyylzipldp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hyylzipldp table {
+<div id="vdavywlbhe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vdavywlbhe table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hyylzipldp thead, #hyylzipldp tbody, #hyylzipldp tfoot, #hyylzipldp tr, #hyylzipldp td, #hyylzipldp th {
+#vdavywlbhe thead, #vdavywlbhe tbody, #vdavywlbhe tfoot, #vdavywlbhe tr, #vdavywlbhe td, #vdavywlbhe th {
   border-style: none;
 }
 
-#hyylzipldp p {
+#vdavywlbhe p {
   margin: 0;
   padding: 0;
 }
 
-#hyylzipldp .gt_table {
+#vdavywlbhe .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -5183,12 +5177,12 @@ To
   border-left-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_caption {
+#vdavywlbhe .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hyylzipldp .gt_title {
+#vdavywlbhe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -5200,7 +5194,7 @@ To
   border-bottom-width: 0;
 }
 
-#hyylzipldp .gt_subtitle {
+#vdavywlbhe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -5212,7 +5206,7 @@ To
   border-top-width: 0;
 }
 
-#hyylzipldp .gt_heading {
+#vdavywlbhe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -5224,13 +5218,13 @@ To
   border-right-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_bottom_border {
+#vdavywlbhe .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_col_headings {
+#vdavywlbhe .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5245,7 +5239,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_col_heading {
+#vdavywlbhe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5265,7 +5259,7 @@ To
   overflow-x: hidden;
 }
 
-#hyylzipldp .gt_column_spanner_outer {
+#vdavywlbhe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5277,15 +5271,15 @@ To
   padding-right: 4px;
 }
 
-#hyylzipldp .gt_column_spanner_outer:first-child {
+#vdavywlbhe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hyylzipldp .gt_column_spanner_outer:last-child {
+#vdavywlbhe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hyylzipldp .gt_column_spanner {
+#vdavywlbhe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -5297,11 +5291,11 @@ To
   width: 100%;
 }
 
-#hyylzipldp .gt_spanner_row {
+#vdavywlbhe .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hyylzipldp .gt_group_heading {
+#vdavywlbhe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5327,7 +5321,7 @@ To
   text-align: left;
 }
 
-#hyylzipldp .gt_empty_group_heading {
+#vdavywlbhe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -5342,15 +5336,15 @@ To
   vertical-align: middle;
 }
 
-#hyylzipldp .gt_from_md > :first-child {
+#vdavywlbhe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hyylzipldp .gt_from_md > :last-child {
+#vdavywlbhe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hyylzipldp .gt_row {
+#vdavywlbhe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5369,7 +5363,7 @@ To
   overflow-x: hidden;
 }
 
-#hyylzipldp .gt_stub {
+#vdavywlbhe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5382,7 +5376,7 @@ To
   padding-right: 5px;
 }
 
-#hyylzipldp .gt_stub_row_group {
+#vdavywlbhe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5396,15 +5390,15 @@ To
   vertical-align: top;
 }
 
-#hyylzipldp .gt_row_group_first td {
+#vdavywlbhe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hyylzipldp .gt_row_group_first th {
+#vdavywlbhe .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hyylzipldp .gt_summary_row {
+#vdavywlbhe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5414,16 +5408,16 @@ To
   padding-right: 5px;
 }
 
-#hyylzipldp .gt_first_summary_row {
+#vdavywlbhe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_first_summary_row.thick {
+#vdavywlbhe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hyylzipldp .gt_last_summary_row {
+#vdavywlbhe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5433,7 +5427,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_grand_summary_row {
+#vdavywlbhe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5443,7 +5437,7 @@ To
   padding-right: 5px;
 }
 
-#hyylzipldp .gt_first_grand_summary_row {
+#vdavywlbhe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5453,7 +5447,7 @@ To
   border-top-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_last_grand_summary_row_top {
+#vdavywlbhe .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5463,11 +5457,11 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_striped {
+#vdavywlbhe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hyylzipldp .gt_table_body {
+#vdavywlbhe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5476,7 +5470,7 @@ To
   border-bottom-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_footnotes {
+#vdavywlbhe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5490,7 +5484,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_footnote {
+#vdavywlbhe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -5499,7 +5493,7 @@ To
   padding-right: 5px;
 }
 
-#hyylzipldp .gt_sourcenotes {
+#vdavywlbhe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5513,7 +5507,7 @@ To
   border-right-color: #D3D3D3;
 }
 
-#hyylzipldp .gt_sourcenote {
+#vdavywlbhe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -5521,77 +5515,77 @@ To
   padding-right: 5px;
 }
 
-#hyylzipldp .gt_left {
+#vdavywlbhe .gt_left {
   text-align: left;
 }
 
-#hyylzipldp .gt_center {
+#vdavywlbhe .gt_center {
   text-align: center;
 }
 
-#hyylzipldp .gt_right {
+#vdavywlbhe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hyylzipldp .gt_font_normal {
+#vdavywlbhe .gt_font_normal {
   font-weight: normal;
 }
 
-#hyylzipldp .gt_font_bold {
+#vdavywlbhe .gt_font_bold {
   font-weight: bold;
 }
 
-#hyylzipldp .gt_font_italic {
+#vdavywlbhe .gt_font_italic {
   font-style: italic;
 }
 
-#hyylzipldp .gt_super {
+#vdavywlbhe .gt_super {
   font-size: 65%;
 }
 
-#hyylzipldp .gt_footnote_marks {
+#vdavywlbhe .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hyylzipldp .gt_asterisk {
+#vdavywlbhe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hyylzipldp .gt_indent_1 {
+#vdavywlbhe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hyylzipldp .gt_indent_2 {
+#vdavywlbhe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hyylzipldp .gt_indent_3 {
+#vdavywlbhe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hyylzipldp .gt_indent_4 {
+#vdavywlbhe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hyylzipldp .gt_indent_5 {
+#vdavywlbhe .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hyylzipldp .katex-display {
+#vdavywlbhe .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hyylzipldp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vdavywlbhe div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 7%">
 <col style="width: 7%">
@@ -5610,10 +5604,10 @@ To
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="14" class="gt_heading gt_title gt_font_normal">KTC Type Transition Matrix</th>
+<td colspan="14" class="gt_heading gt_title gt_font_normal">KTC Type Transition Matrix</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → RCI — percent of global land area</th>
+<td colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">REF → RCI — percent of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">From</th>
@@ -5639,7 +5633,7 @@ To
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</td>
+<th id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</th>
 <td class="gt_row gt_right" headers="stub_1_1 Ar">—</td>
 <td class="gt_row gt_right" headers="stub_1_1 Aw">2.13%</td>
 <td class="gt_row gt_right" headers="stub_1_1 BW">0.00%</td>
@@ -5655,7 +5649,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_1 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</td>
+<th id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</th>
 <td class="gt_row gt_right" headers="stub_1_2 Ar">0.19%</td>
 <td class="gt_row gt_right" headers="stub_1_2 Aw">—</td>
 <td class="gt_row gt_right" headers="stub_1_2 BW">0.02%</td>
@@ -5671,7 +5665,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_2 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BW</td>
+<th id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BW</th>
 <td class="gt_row gt_right" headers="stub_1_3 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 BW">—</td>
@@ -5687,7 +5681,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_3 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BS</td>
+<th id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">BS</th>
 <td class="gt_row gt_right" headers="stub_1_4 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_4 Aw">0.51%</td>
 <td class="gt_row gt_right" headers="stub_1_4 BW">2.35%</td>
@@ -5703,7 +5697,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_4 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</td>
+<th id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</th>
 <td class="gt_row gt_right" headers="stub_1_5 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_5 BW">0.01%</td>
@@ -5719,7 +5713,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_5 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</td>
+<th id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</th>
 <td class="gt_row gt_right" headers="stub_1_6 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 Aw">0.10%</td>
 <td class="gt_row gt_right" headers="stub_1_6 BW">0.00%</td>
@@ -5735,7 +5729,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_6 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</td>
+<th id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</th>
 <td class="gt_row gt_right" headers="stub_1_7 Ar">0.19%</td>
 <td class="gt_row gt_right" headers="stub_1_7 Aw">0.43%</td>
 <td class="gt_row gt_right" headers="stub_1_7 BW">0.01%</td>
@@ -5751,7 +5745,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_7 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Do</td>
+<th id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Do</th>
 <td class="gt_row gt_right" headers="stub_1_8 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_8 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_8 BW">0.01%</td>
@@ -5767,7 +5761,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_8 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</td>
+<th id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</th>
 <td class="gt_row gt_right" headers="stub_1_9 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_9 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_9 BW">0.00%</td>
@@ -5783,7 +5777,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_9 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</td>
+<th id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</th>
 <td class="gt_row gt_right" headers="stub_1_10 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_10 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_10 BW">0.00%</td>
@@ -5799,7 +5793,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_10 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</td>
+<th id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</th>
 <td class="gt_row gt_right" headers="stub_1_11 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_11 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_11 BW">0.00%</td>
@@ -5815,7 +5809,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_11 Fi">0.00%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</td>
+<th id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</th>
 <td class="gt_row gt_right" headers="stub_1_12 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_12 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_12 BW">0.01%</td>
@@ -5831,7 +5825,7 @@ To
 <td class="gt_row gt_right" headers="stub_1_12 Fi">0.00%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</td>
+<th id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</th>
 <td class="gt_row gt_right" headers="stub_1_13 Ar">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_13 Aw">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_13 BW">0.00%</td>
@@ -5861,23 +5855,23 @@ Rather than displaying a separate table for every KTC type, this table identifie
 <p>Net change is the difference between the destination and origin land area assigned to each climate group. Gains and losses summarize only land that changed classification.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ndburanwzc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ndburanwzc table {
+<div id="ykpxkxsith" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ykpxkxsith table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ndburanwzc thead, #ndburanwzc tbody, #ndburanwzc tfoot, #ndburanwzc tr, #ndburanwzc td, #ndburanwzc th {
+#ykpxkxsith thead, #ykpxkxsith tbody, #ykpxkxsith tfoot, #ykpxkxsith tr, #ykpxkxsith td, #ykpxkxsith th {
   border-style: none;
 }
 
-#ndburanwzc p {
+#ykpxkxsith p {
   margin: 0;
   padding: 0;
 }
 
-#ndburanwzc .gt_table {
+#ykpxkxsith .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -5903,12 +5897,12 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-left-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_caption {
+#ykpxkxsith .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ndburanwzc .gt_title {
+#ykpxkxsith .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -5920,7 +5914,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-bottom-width: 0;
 }
 
-#ndburanwzc .gt_subtitle {
+#ykpxkxsith .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -5932,7 +5926,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-top-width: 0;
 }
 
-#ndburanwzc .gt_heading {
+#ykpxkxsith .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -5944,13 +5938,13 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-right-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_bottom_border {
+#ykpxkxsith .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_col_headings {
+#ykpxkxsith .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5965,7 +5959,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-right-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_col_heading {
+#ykpxkxsith .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5985,7 +5979,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   overflow-x: hidden;
 }
 
-#ndburanwzc .gt_column_spanner_outer {
+#ykpxkxsith .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5997,15 +5991,15 @@ Rather than displaying a separate table for every KTC type, this table identifie
   padding-right: 4px;
 }
 
-#ndburanwzc .gt_column_spanner_outer:first-child {
+#ykpxkxsith .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ndburanwzc .gt_column_spanner_outer:last-child {
+#ykpxkxsith .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ndburanwzc .gt_column_spanner {
+#ykpxkxsith .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -6017,11 +6011,11 @@ Rather than displaying a separate table for every KTC type, this table identifie
   width: 100%;
 }
 
-#ndburanwzc .gt_spanner_row {
+#ykpxkxsith .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ndburanwzc .gt_group_heading {
+#ykpxkxsith .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6047,7 +6041,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   text-align: left;
 }
 
-#ndburanwzc .gt_empty_group_heading {
+#ykpxkxsith .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -6062,15 +6056,15 @@ Rather than displaying a separate table for every KTC type, this table identifie
   vertical-align: middle;
 }
 
-#ndburanwzc .gt_from_md > :first-child {
+#ykpxkxsith .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ndburanwzc .gt_from_md > :last-child {
+#ykpxkxsith .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ndburanwzc .gt_row {
+#ykpxkxsith .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6089,7 +6083,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   overflow-x: hidden;
 }
 
-#ndburanwzc .gt_stub {
+#ykpxkxsith .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6102,7 +6096,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   padding-right: 5px;
 }
 
-#ndburanwzc .gt_stub_row_group {
+#ykpxkxsith .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6116,15 +6110,15 @@ Rather than displaying a separate table for every KTC type, this table identifie
   vertical-align: top;
 }
 
-#ndburanwzc .gt_row_group_first td {
+#ykpxkxsith .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ndburanwzc .gt_row_group_first th {
+#ykpxkxsith .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ndburanwzc .gt_summary_row {
+#ykpxkxsith .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6134,16 +6128,16 @@ Rather than displaying a separate table for every KTC type, this table identifie
   padding-right: 5px;
 }
 
-#ndburanwzc .gt_first_summary_row {
+#ykpxkxsith .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_first_summary_row.thick {
+#ykpxkxsith .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ndburanwzc .gt_last_summary_row {
+#ykpxkxsith .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6153,7 +6147,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-bottom-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_grand_summary_row {
+#ykpxkxsith .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6163,7 +6157,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   padding-right: 5px;
 }
 
-#ndburanwzc .gt_first_grand_summary_row {
+#ykpxkxsith .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6173,7 +6167,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-top-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_last_grand_summary_row_top {
+#ykpxkxsith .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6183,11 +6177,11 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-bottom-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_striped {
+#ykpxkxsith .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ndburanwzc .gt_table_body {
+#ykpxkxsith .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6196,7 +6190,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-bottom-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_footnotes {
+#ykpxkxsith .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6210,7 +6204,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-right-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_footnote {
+#ykpxkxsith .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -6219,7 +6213,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   padding-right: 5px;
 }
 
-#ndburanwzc .gt_sourcenotes {
+#ykpxkxsith .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6233,7 +6227,7 @@ Rather than displaying a separate table for every KTC type, this table identifie
   border-right-color: #D3D3D3;
 }
 
-#ndburanwzc .gt_sourcenote {
+#ykpxkxsith .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -6241,77 +6235,77 @@ Rather than displaying a separate table for every KTC type, this table identifie
   padding-right: 5px;
 }
 
-#ndburanwzc .gt_left {
+#ykpxkxsith .gt_left {
   text-align: left;
 }
 
-#ndburanwzc .gt_center {
+#ykpxkxsith .gt_center {
   text-align: center;
 }
 
-#ndburanwzc .gt_right {
+#ykpxkxsith .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ndburanwzc .gt_font_normal {
+#ykpxkxsith .gt_font_normal {
   font-weight: normal;
 }
 
-#ndburanwzc .gt_font_bold {
+#ykpxkxsith .gt_font_bold {
   font-weight: bold;
 }
 
-#ndburanwzc .gt_font_italic {
+#ykpxkxsith .gt_font_italic {
   font-style: italic;
 }
 
-#ndburanwzc .gt_super {
+#ykpxkxsith .gt_super {
   font-size: 65%;
 }
 
-#ndburanwzc .gt_footnote_marks {
+#ykpxkxsith .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ndburanwzc .gt_asterisk {
+#ykpxkxsith .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ndburanwzc .gt_indent_1 {
+#ykpxkxsith .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ndburanwzc .gt_indent_2 {
+#ykpxkxsith .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ndburanwzc .gt_indent_3 {
+#ykpxkxsith .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ndburanwzc .gt_indent_4 {
+#ykpxkxsith .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ndburanwzc .gt_indent_5 {
+#ykpxkxsith .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ndburanwzc .katex-display {
+#ykpxkxsith .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ndburanwzc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ykpxkxsith div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 10%">
@@ -6326,10 +6320,10 @@ Rather than displaying a separate table for every KTC type, this table identifie
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="10" class="gt_heading gt_title gt_font_normal">KTC Group Gains, Losses, and Net Change</th>
+<td colspan="10" class="gt_heading gt_title gt_font_normal">KTC Group Gains, Losses, and Net Change</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="10" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Percentage of global land area</th>
+<td colspan="10" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Percentage of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Group</th>
@@ -6357,7 +6351,7 @@ REF → RCI
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">A</td>
+<th id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">A</th>
 <td class="gt_row gt_right" headers="stub_1_1 ref_csn_gain_pct">0.70%</td>
 <td class="gt_row gt_right" headers="stub_1_1 ref_csn_loss_pct">0.76%</td>
 <td class="gt_row gt_right" headers="stub_1_1 ref_csn_net_pct">−0.07%</td>
@@ -6369,7 +6363,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_1 ref_rci_net_pct">−0.51%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">B</td>
+<th id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">B</th>
 <td class="gt_row gt_right" headers="stub_1_2 ref_csn_gain_pct">1.94%</td>
 <td class="gt_row gt_right" headers="stub_1_2 ref_csn_loss_pct">0.25%</td>
 <td class="gt_row gt_right" headers="stub_1_2 ref_csn_net_pct">1.69%</td>
@@ -6381,7 +6375,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_2 ref_rci_net_pct">3.05%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">C</td>
+<th id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">C</th>
 <td class="gt_row gt_right" headers="stub_1_3 ref_csn_gain_pct">0.67%</td>
 <td class="gt_row gt_right" headers="stub_1_3 ref_csn_loss_pct">0.91%</td>
 <td class="gt_row gt_right" headers="stub_1_3 ref_csn_net_pct">−0.24%</td>
@@ -6393,7 +6387,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_3 ref_rci_net_pct">−0.19%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">D</td>
+<th id="stub_1_4" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">D</th>
 <td class="gt_row gt_right" headers="stub_1_4 ref_csn_gain_pct">1.71%</td>
 <td class="gt_row gt_right" headers="stub_1_4 ref_csn_loss_pct">1.33%</td>
 <td class="gt_row gt_right" headers="stub_1_4 ref_csn_net_pct">0.38%</td>
@@ -6405,7 +6399,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_4 ref_rci_net_pct">1.57%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">E</td>
+<th id="stub_1_5" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">E</th>
 <td class="gt_row gt_right" headers="stub_1_5 ref_csn_gain_pct">1.04%</td>
 <td class="gt_row gt_right" headers="stub_1_5 ref_csn_loss_pct">1.73%</td>
 <td class="gt_row gt_right" headers="stub_1_5 ref_csn_net_pct">−0.69%</td>
@@ -6417,7 +6411,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_5 ref_rci_net_pct">−2.15%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">F</td>
+<th id="stub_1_6" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">F</th>
 <td class="gt_row gt_right" headers="stub_1_6 ref_csn_gain_pct">0.00%</td>
 <td class="gt_row gt_right" headers="stub_1_6 ref_csn_loss_pct">1.08%</td>
 <td class="gt_row gt_right" headers="stub_1_6 ref_csn_net_pct">−1.08%</td>
@@ -6437,16 +6431,16 @@ REF → RCI
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_build_net_change_plot</span>(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_build_net_change_plot</span>(</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  group_net_change,</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Net Change in KTC Climate Groups"</span>,</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Climate Group"</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="05-transition-analysis_files/figure-html/group-net-change-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="03-transition-analysis_files/figure-html/group-net-change-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -6457,23 +6451,23 @@ REF → RCI
 <p>The final table summarizes gains, losses, and net change for all Köppen–Trewartha climate types. The transition-level detail saved by this notebook is used for geographic mapping in the final workflow stage.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="izunluxyhp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#izunluxyhp table {
+<div id="hhlryfpgwk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#hhlryfpgwk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#izunluxyhp thead, #izunluxyhp tbody, #izunluxyhp tfoot, #izunluxyhp tr, #izunluxyhp td, #izunluxyhp th {
+#hhlryfpgwk thead, #hhlryfpgwk tbody, #hhlryfpgwk tfoot, #hhlryfpgwk tr, #hhlryfpgwk td, #hhlryfpgwk th {
   border-style: none;
 }
 
-#izunluxyhp p {
+#hhlryfpgwk p {
   margin: 0;
   padding: 0;
 }
 
-#izunluxyhp .gt_table {
+#hhlryfpgwk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -6499,12 +6493,12 @@ REF → RCI
   border-left-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_caption {
+#hhlryfpgwk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#izunluxyhp .gt_title {
+#hhlryfpgwk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -6516,7 +6510,7 @@ REF → RCI
   border-bottom-width: 0;
 }
 
-#izunluxyhp .gt_subtitle {
+#hhlryfpgwk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -6528,7 +6522,7 @@ REF → RCI
   border-top-width: 0;
 }
 
-#izunluxyhp .gt_heading {
+#hhlryfpgwk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -6540,13 +6534,13 @@ REF → RCI
   border-right-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_bottom_border {
+#hhlryfpgwk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_col_headings {
+#hhlryfpgwk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6561,7 +6555,7 @@ REF → RCI
   border-right-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_col_heading {
+#hhlryfpgwk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6581,7 +6575,7 @@ REF → RCI
   overflow-x: hidden;
 }
 
-#izunluxyhp .gt_column_spanner_outer {
+#hhlryfpgwk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6593,15 +6587,15 @@ REF → RCI
   padding-right: 4px;
 }
 
-#izunluxyhp .gt_column_spanner_outer:first-child {
+#hhlryfpgwk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#izunluxyhp .gt_column_spanner_outer:last-child {
+#hhlryfpgwk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#izunluxyhp .gt_column_spanner {
+#hhlryfpgwk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -6613,11 +6607,11 @@ REF → RCI
   width: 100%;
 }
 
-#izunluxyhp .gt_spanner_row {
+#hhlryfpgwk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#izunluxyhp .gt_group_heading {
+#hhlryfpgwk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6643,7 +6637,7 @@ REF → RCI
   text-align: left;
 }
 
-#izunluxyhp .gt_empty_group_heading {
+#hhlryfpgwk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -6658,15 +6652,15 @@ REF → RCI
   vertical-align: middle;
 }
 
-#izunluxyhp .gt_from_md > :first-child {
+#hhlryfpgwk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#izunluxyhp .gt_from_md > :last-child {
+#hhlryfpgwk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#izunluxyhp .gt_row {
+#hhlryfpgwk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6685,7 +6679,7 @@ REF → RCI
   overflow-x: hidden;
 }
 
-#izunluxyhp .gt_stub {
+#hhlryfpgwk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6698,7 +6692,7 @@ REF → RCI
   padding-right: 5px;
 }
 
-#izunluxyhp .gt_stub_row_group {
+#hhlryfpgwk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6712,15 +6706,15 @@ REF → RCI
   vertical-align: top;
 }
 
-#izunluxyhp .gt_row_group_first td {
+#hhlryfpgwk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#izunluxyhp .gt_row_group_first th {
+#hhlryfpgwk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#izunluxyhp .gt_summary_row {
+#hhlryfpgwk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6730,16 +6724,16 @@ REF → RCI
   padding-right: 5px;
 }
 
-#izunluxyhp .gt_first_summary_row {
+#hhlryfpgwk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_first_summary_row.thick {
+#hhlryfpgwk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#izunluxyhp .gt_last_summary_row {
+#hhlryfpgwk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6749,7 +6743,7 @@ REF → RCI
   border-bottom-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_grand_summary_row {
+#hhlryfpgwk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6759,7 +6753,7 @@ REF → RCI
   padding-right: 5px;
 }
 
-#izunluxyhp .gt_first_grand_summary_row {
+#hhlryfpgwk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6769,7 +6763,7 @@ REF → RCI
   border-top-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_last_grand_summary_row_top {
+#hhlryfpgwk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6779,11 +6773,11 @@ REF → RCI
   border-bottom-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_striped {
+#hhlryfpgwk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#izunluxyhp .gt_table_body {
+#hhlryfpgwk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6792,7 +6786,7 @@ REF → RCI
   border-bottom-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_footnotes {
+#hhlryfpgwk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6806,7 +6800,7 @@ REF → RCI
   border-right-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_footnote {
+#hhlryfpgwk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -6815,7 +6809,7 @@ REF → RCI
   padding-right: 5px;
 }
 
-#izunluxyhp .gt_sourcenotes {
+#hhlryfpgwk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6829,7 +6823,7 @@ REF → RCI
   border-right-color: #D3D3D3;
 }
 
-#izunluxyhp .gt_sourcenote {
+#hhlryfpgwk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -6837,77 +6831,77 @@ REF → RCI
   padding-right: 5px;
 }
 
-#izunluxyhp .gt_left {
+#hhlryfpgwk .gt_left {
   text-align: left;
 }
 
-#izunluxyhp .gt_center {
+#hhlryfpgwk .gt_center {
   text-align: center;
 }
 
-#izunluxyhp .gt_right {
+#hhlryfpgwk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#izunluxyhp .gt_font_normal {
+#hhlryfpgwk .gt_font_normal {
   font-weight: normal;
 }
 
-#izunluxyhp .gt_font_bold {
+#hhlryfpgwk .gt_font_bold {
   font-weight: bold;
 }
 
-#izunluxyhp .gt_font_italic {
+#hhlryfpgwk .gt_font_italic {
   font-style: italic;
 }
 
-#izunluxyhp .gt_super {
+#hhlryfpgwk .gt_super {
   font-size: 65%;
 }
 
-#izunluxyhp .gt_footnote_marks {
+#hhlryfpgwk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#izunluxyhp .gt_asterisk {
+#hhlryfpgwk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#izunluxyhp .gt_indent_1 {
+#hhlryfpgwk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#izunluxyhp .gt_indent_2 {
+#hhlryfpgwk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#izunluxyhp .gt_indent_3 {
+#hhlryfpgwk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#izunluxyhp .gt_indent_4 {
+#hhlryfpgwk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#izunluxyhp .gt_indent_5 {
+#hhlryfpgwk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#izunluxyhp .katex-display {
+#hhlryfpgwk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#izunluxyhp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#hhlryfpgwk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 10%">
@@ -6922,10 +6916,10 @@ REF → RCI
 </colgroup>
 <thead>
 <tr class="gt_heading header">
-<th colspan="10" class="gt_heading gt_title gt_font_normal">KTC Type Gains, Losses, and Net Change</th>
+<td colspan="10" class="gt_heading gt_title gt_font_normal">KTC Type Gains, Losses, and Net Change</td>
 </tr>
 <tr class="gt_heading even">
-<th colspan="10" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Percentage of global land area</th>
+<td colspan="10" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Percentage of global land area</td>
 </tr>
 <tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Type</th>
@@ -6953,7 +6947,7 @@ REF → RCI
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</td>
+<th id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Ar</th>
 <td class="gt_row gt_right" headers="stub_1_1 ref_csn_gain_pct">0.25%</td>
 <td class="gt_row gt_right" headers="stub_1_1 ref_csn_loss_pct">0.93%</td>
 <td class="gt_row gt_right" headers="stub_1_1 ref_csn_net_pct">−0.68%</td>
@@ -6965,7 +6959,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_1 ref_rci_net_pct">−1.75%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</td>
+<th id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Aw</th>
 <td class="gt_row gt_right" headers="stub_1_2 ref_csn_gain_pct">1.49%</td>
 <td class="gt_row gt_right" headers="stub_1_2 ref_csn_loss_pct">0.88%</td>
 <td class="gt_row gt_right" headers="stub_1_2 ref_csn_net_pct">0.61%</td>
@@ -6977,7 +6971,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_2 ref_rci_net_pct">1.24%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">BW</td>
+<th id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">BW</th>
 <td class="gt_row gt_right" headers="stub_1_3 ref_csn_gain_pct">1.00%</td>
 <td class="gt_row gt_right" headers="stub_1_3 ref_csn_loss_pct">0.24%</td>
 <td class="gt_row gt_right" headers="stub_1_3 ref_csn_net_pct">0.76%</td>
@@ -6989,7 +6983,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_3 ref_rci_net_pct">1.97%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_4" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">BS</td>
+<th id="stub_1_4" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">BS</th>
 <td class="gt_row gt_right" headers="stub_1_4 ref_csn_gain_pct">2.18%</td>
 <td class="gt_row gt_right" headers="stub_1_4 ref_csn_loss_pct">1.24%</td>
 <td class="gt_row gt_right" headers="stub_1_4 ref_csn_net_pct">0.93%</td>
@@ -7001,7 +6995,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_4 ref_rci_net_pct">1.09%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_5" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</td>
+<th id="stub_1_5" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Cs</th>
 <td class="gt_row gt_right" headers="stub_1_5 ref_csn_gain_pct">0.07%</td>
 <td class="gt_row gt_right" headers="stub_1_5 ref_csn_loss_pct">0.10%</td>
 <td class="gt_row gt_right" headers="stub_1_5 ref_csn_net_pct">−0.04%</td>
@@ -7013,7 +7007,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_5 ref_rci_net_pct">0.03%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_6" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</td>
+<th id="stub_1_6" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Cw</th>
 <td class="gt_row gt_right" headers="stub_1_6 ref_csn_gain_pct">0.13%</td>
 <td class="gt_row gt_right" headers="stub_1_6 ref_csn_loss_pct">0.21%</td>
 <td class="gt_row gt_right" headers="stub_1_6 ref_csn_net_pct">−0.09%</td>
@@ -7025,7 +7019,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_6 ref_rci_net_pct">−0.18%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_7" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</td>
+<th id="stub_1_7" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Cf</th>
 <td class="gt_row gt_right" headers="stub_1_7 ref_csn_gain_pct">0.70%</td>
 <td class="gt_row gt_right" headers="stub_1_7 ref_csn_loss_pct">0.81%</td>
 <td class="gt_row gt_right" headers="stub_1_7 ref_csn_net_pct">−0.11%</td>
@@ -7037,7 +7031,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_7 ref_rci_net_pct">−0.04%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_8" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Do</td>
+<th id="stub_1_8" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Do</th>
 <td class="gt_row gt_right" headers="stub_1_8 ref_csn_gain_pct">1.02%</td>
 <td class="gt_row gt_right" headers="stub_1_8 ref_csn_loss_pct">0.64%</td>
 <td class="gt_row gt_right" headers="stub_1_8 ref_csn_net_pct">0.37%</td>
@@ -7049,7 +7043,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_8 ref_rci_net_pct">0.52%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_9" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</td>
+<th id="stub_1_9" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Dc</th>
 <td class="gt_row gt_right" headers="stub_1_9 ref_csn_gain_pct">1.62%</td>
 <td class="gt_row gt_right" headers="stub_1_9 ref_csn_loss_pct">1.61%</td>
 <td class="gt_row gt_right" headers="stub_1_9 ref_csn_net_pct">0.00%</td>
@@ -7061,7 +7055,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_9 ref_rci_net_pct">1.05%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_10" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</td>
+<th id="stub_1_10" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Eo</th>
 <td class="gt_row gt_right" headers="stub_1_10 ref_csn_gain_pct">0.57%</td>
 <td class="gt_row gt_right" headers="stub_1_10 ref_csn_loss_pct">0.32%</td>
 <td class="gt_row gt_right" headers="stub_1_10 ref_csn_net_pct">0.25%</td>
@@ -7073,7 +7067,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_10 ref_rci_net_pct">0.04%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_11" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</td>
+<th id="stub_1_11" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Ec</th>
 <td class="gt_row gt_right" headers="stub_1_11 ref_csn_gain_pct">0.83%</td>
 <td class="gt_row gt_right" headers="stub_1_11 ref_csn_loss_pct">1.76%</td>
 <td class="gt_row gt_right" headers="stub_1_11 ref_csn_net_pct">−0.93%</td>
@@ -7085,7 +7079,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_11 ref_rci_net_pct">−2.19%</td>
 </tr>
 <tr class="even">
-<td id="stub_1_12" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</td>
+<th id="stub_1_12" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Ft</th>
 <td class="gt_row gt_right" headers="stub_1_12 ref_csn_gain_pct">0.15%</td>
 <td class="gt_row gt_right" headers="stub_1_12 ref_csn_loss_pct">1.10%</td>
 <td class="gt_row gt_right" headers="stub_1_12 ref_csn_net_pct">−0.95%</td>
@@ -7097,7 +7091,7 @@ REF → RCI
 <td class="gt_row gt_right" headers="stub_1_12 ref_rci_net_pct">−1.56%</td>
 </tr>
 <tr class="odd">
-<td id="stub_1_13" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</td>
+<th id="stub_1_13" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Fi</th>
 <td class="gt_row gt_right" headers="stub_1_13 ref_csn_gain_pct">0.01%</td>
 <td class="gt_row gt_right" headers="stub_1_13 ref_csn_loss_pct">0.14%</td>
 <td class="gt_row gt_right" headers="stub_1_13 ref_csn_net_pct">−0.13%</td>
@@ -7117,16 +7111,16 @@ REF → RCI
 <div class="cell">
 <details class="code-fold">
 <summary>Show code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_build_net_change_plot</span>(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_build_net_change_plot</span>(</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  type_net_change,</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Net Change in KTC Climate Types"</span>,</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Climate Type"</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="05-transition-analysis_files/figure-html/type-net-change-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="03-transition-analysis_files/figure-html/type-net-change-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -7189,13 +7183,14 @@ REF → RCI
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -7229,16 +7224,16 @@ REF → RCI
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {
@@ -7590,17 +7585,17 @@ REF → RCI
   </script>
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./04-climate-classification.html" class="pagination-link" aria-label="Climate Classification">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Climate Classification</span></span>
+      <a href="./02-climate-classification.html" class="pagination-link" aria-label="Climate Classification">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Climate Classification</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06-transition-mapping.html" class="pagination-link" aria-label="Transition Mapping">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Transition Mapping</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04-transition-mapping.html" class="pagination-link" aria-label="Transition Mapping">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Transition Mapping</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb12" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Transition Analysis"</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Rick Forest"</span></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> today</span></span>
@@ -7722,7 +7717,7 @@ REF → RCI
 <span id="cb12-130"><a href="#cb12-130" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file_exists</span>(ktc_codes_path)) {</span>
 <span id="cb12-131"><a href="#cb12-131" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(</span>
 <span id="cb12-132"><a href="#cb12-132" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Missing data/reference/ktc_type_codes.csv. "</span>,</span>
-<span id="cb12-133"><a href="#cb12-133" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Run 01-data-acquisition.qmd first."</span></span>
+<span id="cb12-133"><a href="#cb12-133" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Run 02-climate-classification.qmd to generate the reference data."</span></span>
 <span id="cb12-134"><a href="#cb12-134" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb12-135"><a href="#cb12-135" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb12-136"><a href="#cb12-136" aria-hidden="true" tabindex="-1"></a></span>
@@ -8348,7 +8343,7 @@ REF → RCI
 <span id="cb12-760"><a href="#cb12-760" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">file_exists</span>(classification_path)) {</span>
 <span id="cb12-761"><a href="#cb12-761" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(</span>
 <span id="cb12-762"><a href="#cb12-762" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The classification dataset does not exist. "</span>,</span>
-<span id="cb12-763"><a href="#cb12-763" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Run 04-climate-classification.qmd first."</span></span>
+<span id="cb12-763"><a href="#cb12-763" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Run 02-climate-classification.qmd first."</span></span>
 <span id="cb12-764"><a href="#cb12-764" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb12-765"><a href="#cb12-765" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb12-766"><a href="#cb12-766" aria-hidden="true" tabindex="-1"></a></span>
@@ -8633,7 +8628,7 @@ REF → RCI
 <span id="cb12-1063"><a href="#cb12-1063" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Climate Type"</span></span>
 <span id="cb12-1064"><a href="#cb12-1064" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb12-1065"><a href="#cb12-1065" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

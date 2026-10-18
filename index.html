@@ -2,19 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rick Forest">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-10-18">
 
-<title>Global Climate Classification Change Analysis</title>
+<title>Global Climate Classification — Köppen–Trewartha</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -67,17 +73,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-data-acquisition.html" rel="next">
+<link href="./01-determinant-calculation.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-707766490a2d6a7e331f17c5d3230b06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-db6eafe1836baa1891fe4df064462fd9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -133,7 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Global Climate Classification Change Analysis</a> 
+      <a href="./">Global Climate Classification — Köppen–Trewartha</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -151,38 +157,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-data-acquisition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data Acquisition</span></span></a>
+  <a href="./01-determinant-calculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Determinant Calculation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-data-transformation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Transformation</span></span></a>
+  <a href="./02-climate-classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Climate Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-determinant-calculation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Determinant Calculation</span></span></a>
+  <a href="./03-transition-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transition Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-climate-classification.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Climate Classification</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-transition-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Transition Analysis</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-transition-mapping.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Transition Mapping</span></span></a>
+  <a href="./04-transition-mapping.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Transition Mapping</span></span></a>
   </div>
 </li>
     </ul>
@@ -200,6 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#climate-periods" id="toc-climate-periods" class="nav-link" data-scroll-target="#climate-periods">Climate Periods</a></li>
   <li><a href="#köppentrewartha-climate-classification" id="toc-köppentrewartha-climate-classification" class="nav-link" data-scroll-target="#köppentrewartha-climate-classification">Köppen–Trewartha Climate Classification</a></li>
   <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  <li><a href="#workflow-1" id="toc-workflow-1" class="nav-link" data-scroll-target="#workflow-1">Workflow</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -212,7 +207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Global Climate Classification Change Analysis</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Global Climate Classification — Köppen–Trewartha</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -229,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 18, 2026</p>
+      <p class="date">October 18, 2026</p>
     </div>
   </div>
   
@@ -294,57 +289,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="workflow" class="level2">
 <h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
-<p>The analysis is organized as a reproducible workflow consisting of six stages:</p>
+</section>
+<section id="workflow-1" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-1">Workflow</h2>
+<p>The project uses monthly ERA5 temperature and precipitation climatologies prepared by the companion <strong>ERA5-DATA</strong> project. That project handles ERA5 acquisition and transformation, producing reusable datasets for the REF, CSN, and RCI climate intervals.</p>
+<p>The climate-classification analysis is organized into four sequential stages:</p>
 <ol type="1">
-<li><p><strong>Data Acquisition</strong><br>
-Acquire ERA5 temperature, precipitation, and land-sea-mask data; create the static Köppen–Trewartha reference tables and coastline layer; and document the project software environment and acquired datasets.</p></li>
-<li><p><strong>Data Transformation</strong><br>
-Convert the monthly ERA5 source data into reusable processing caches and twelve-month climatologies for temperature and precipitation for each climate interval.</p></li>
 <li><p><strong>Determinant Calculation</strong><br>
-Calculate the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha classification system.</p></li>
+Read the transformed ERA5 climatologies from the shared ERA5-DATA project and calculate the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha classification system.</p></li>
 <li><p><strong>Climate Classification</strong><br>
-Apply the same Köppen–Trewartha classification rules to each grid cell for the REF, CSN, and RCI climate intervals and summarize the resulting climate groups and types.</p></li>
+Apply the same Köppen–Trewartha classification rules to each grid cell for the REF, CSN, and RCI climate intervals; create the classification reference tables and coastline layer; and summarize the resulting climate groups and types.</p></li>
 <li><p><strong>Transition Analysis</strong><br>
 Quantify climate-group and climate-type transitions for REF → CSN, CSN → RCI, and REF → RCI; examine transition matrices; and calculate gains, losses, and net classification changes.</p></li>
 <li><p><strong>Transition Mapping</strong><br>
 Map the geographic distribution of climate-classification changes, including broad spatial patterns, expansion of dry and desert classifications, retreat of polar classifications, and the long-term REF → RCI transition pattern.</p></li>
 </ol>
+<p>The ERA5-DATA and Global Climate Classification — Köppen–Trewartha projects are maintained as sibling directories under ~/Projects/. Shared climate datasets remain in ERA5-DATA, while classification determinants, classifications, transition datasets, and mapping outputs belong to this analysis project.</p>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>Climate data are obtained from the <strong>ERA5 reanalysis</strong> produced by the European Centre for Medium-Range Weather Forecasts and distributed through the Copernicus Climate Data Store.</p>
-<p>The source data used in this analysis include:</p>
+<p>This analysis uses <strong>ERA5 reanalysis</strong> data produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) and distributed through the Copernicus Climate Data Store.</p>
+<p>The companion <strong>ERA5-DATA</strong> project acquires and transforms the source data into reusable monthly climatologies for the three analysis intervals (REF, CSN, and RCI).</p>
+<p>The shared datasets contain:</p>
 <ul>
 <li>Monthly 2 m air temperature</li>
 <li>Monthly total precipitation</li>
-<li>ERA5 land-sea mask</li>
 </ul>
-<p>Static project reference data include:</p>
+<p>These transformed datasets are read from the sibling project at <code>../era5-data/data/transformed/</code>.</p>
+<p>The climate-classification project maintains its own derived analytical datasets and static reference data, including:</p>
 <ul>
 <li>Köppen–Trewartha climate-group definitions and colors</li>
 <li>Köppen–Trewartha climate-type definitions and colors</li>
 <li>Natural Earth global coastline data</li>
 </ul>
+<p>The ERA5 land-sea mask is an additional source dataset used in the broader data-preparation workflow.</p>
 </section>
 <section id="software" class="level2">
 <h2 class="anchored" data-anchor-id="software">Software</h2>
 <p>Programming Language: <strong>R</strong><br>
 Development Environment: <strong>Positron</strong><br>
 Document Creation: <strong>Quarto</strong></p>
-<p>R Packages:</p>
+<p>Major R packages used in the climate-classification analysis include:</p>
 <ul>
 <li><strong>arrow</strong> – Parquet data import and export</li>
-<li><strong>ecmwfr</strong> – ERA5 acquisition from the Copernicus Climate Data Store</li>
-<li><strong>fs</strong> – file and directory operations</li>
-<li><strong>gt</strong> – summary tables</li>
-<li><strong>patchwork</strong> – plot layouts</li>
+<li><strong>fs</strong> – File and directory operations</li>
+<li><strong>gt</strong> – Summary tables</li>
+<li><strong>patchwork</strong> – Plot layouts</li>
 <li><strong>rnaturalearth</strong> – Natural Earth geographic data</li>
-<li><strong>sf</strong> – spatial data processing and mapping</li>
-<li><strong>terra</strong> – raster processing and climatological aggregation</li>
-<li><strong>tidyverse</strong> – data manipulation and visualization</li>
-<li><strong>viridisLite</strong> – climate-period color palettes</li>
+<li><strong>sf</strong> – Spatial data processing and mapping</li>
+<li><strong>terra</strong> – Raster processing and spatial analysis</li>
+<li><strong>tidyverse</strong> – Data manipulation and visualization</li>
+<li><strong>viridisLite</strong> – Climate-period color palettes</li>
 </ul>
-<p>Exact software and package versions used for the project are documented in the Data Acquisition chapter.</p>
+<p>The project uses <strong>renv</strong> for reproducible R package management. Package versions are recorded in <code>renv.lock</code>.</p>
+<p>ERA5 acquisition and transformation are handled separately by the companion <strong>ERA5-DATA</strong> project.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
@@ -413,13 +411,14 @@ Document Creation: <strong>Quarto</strong></p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -453,16 +452,16 @@ Document Creation: <strong>Quarto</strong></p>
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {
@@ -816,12 +815,12 @@ Document Creation: <strong>Quarto</strong></p>
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-data-acquisition.html" class="pagination-link" aria-label="Data Acquisition">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data Acquisition</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01-determinant-calculation.html" class="pagination-link" aria-label="Determinant Calculation">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Determinant Calculation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction {.unnumbered}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction {.unnumbered}</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>This project analyzes changes in global climate classification across three climate intervals, beginning with the 1961–1990 WMO Climatological Reference Period and extending through the 2021–2025 Recent Climate Interval, using ERA5 temperature and precipitation data from the Copernicus Climate Data Store.</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -863,73 +862,79 @@ Document Creation: <strong>Quarto</strong></p>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Workflow</span></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>The analysis is organized as a reproducible workflow consisting of six stages:</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Workflow</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Data Acquisition**  </span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>   Acquire ERA5 temperature, precipitation, and land-sea-mask data; create the static Köppen–Trewartha reference tables and coastline layer; and document the project software environment and acquired datasets.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Data Transformation**  </span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>   Convert the monthly ERA5 source data into reusable processing caches and twelve-month climatologies for temperature and precipitation for each climate interval.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Determinant Calculation**  </span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>   Calculate the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha classification system.</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Climate Classification**  </span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>   Apply the same Köppen–Trewartha classification rules to each grid cell for the REF, CSN, and RCI climate intervals and summarize the resulting climate groups and types.</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Transition Analysis**  </span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>   Quantify climate-group and climate-type transitions for REF → CSN, CSN → RCI, and REF → RCI; examine transition matrices; and calculate gains, losses, and net classification changes.</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Transition Mapping**  </span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>   Map the geographic distribution of climate-classification changes, including broad spatial patterns, expansion of dry and desert classifications, retreat of polar classifications, and the long-term REF → RCI transition pattern.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>The project uses monthly ERA5 temperature and precipitation climatologies prepared by the companion **ERA5-DATA** project. That project handles ERA5 acquisition and transformation, producing reusable datasets for the REF, CSN, and RCI climate intervals.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>The climate-classification analysis is organized into four sequential stages:</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Determinant Calculation**  </span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>   Read the transformed ERA5 climatologies from the shared ERA5-DATA project and calculate the temperature, precipitation, and aridity determinants required by the Köppen–Trewartha classification system.</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Climate Classification**  </span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>   Apply the same Köppen–Trewartha classification rules to each grid cell for the REF, CSN, and RCI climate intervals; create the classification reference tables and coastline layer; and summarize the resulting climate groups and types.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Transition Analysis**  </span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>   Quantify climate-group and climate-type transitions for REF → CSN, CSN → RCI, and REF → RCI; examine transition matrices; and calculate gains, losses, and net classification changes.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Transition Mapping**  </span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>   Map the geographic distribution of climate-classification changes, including broad spatial patterns, expansion of dry and desert classifications, retreat of polar classifications, and the long-term REF → RCI transition pattern.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>The ERA5-DATA and Global Climate Classification — Köppen–Trewartha projects are maintained as sibling directories under ~/Projects/. Shared climate datasets remain in ERA5-DATA, while classification determinants, classifications, transition datasets, and mapping outputs belong to this analysis project.</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data</span></span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Climate data are obtained from the **ERA5 reanalysis** produced by the European Centre for Medium-Range Weather Forecasts and distributed through the Copernicus Climate Data Store.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>This analysis uses **ERA5 reanalysis** data produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) and distributed through the Copernicus Climate Data Store.</span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>The source data used in this analysis include:</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>The companion **ERA5-DATA** project acquires and transforms the source data into reusable monthly climatologies for the three analysis intervals (REF, CSN, and RCI).</span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Monthly 2 m air temperature</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Monthly total precipitation</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ERA5 land-sea mask</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>Static project reference data include:</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Köppen–Trewartha climate-group definitions and colors</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Köppen–Trewartha climate-type definitions and colors</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Natural Earth global coastline data</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="fu">## Software</span></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Programming Language: **R**  </span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Development Environment: **Positron**  </span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Document Creation: **Quarto**</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>R Packages:</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**arrow** – Parquet data import and export</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**ecmwfr** – ERA5 acquisition from the Copernicus Climate Data Store</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**fs** – file and directory operations</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**gt** – summary tables</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**patchwork** – plot layouts</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**rnaturalearth** – Natural Earth geographic data</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**sf** – spatial data processing and mapping</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**terra** – raster processing and climatological aggregation</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**tidyverse** – data manipulation and visualization</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**viridisLite** – climate-period color palettes</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Exact software and package versions used for the project are documented in the Data Acquisition chapter.</span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The shared datasets contain:</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Monthly 2 m air temperature</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Monthly total precipitation</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>These transformed datasets are read from the sibling project at <span class="in">`../era5-data/data/transformed/`</span>.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>The climate-classification project maintains its own derived analytical datasets and static reference data, including:</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Köppen–Trewartha climate-group definitions and colors</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Köppen–Trewartha climate-type definitions and colors</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Natural Earth global coastline data</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>The ERA5 land-sea mask is an additional source dataset used in the broader data-preparation workflow.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Software</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Programming Language: **R**  </span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Development Environment: **Positron**  </span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Document Creation: **Quarto**</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>Major R packages used in the climate-classification analysis include:</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**arrow** – Parquet data import and export</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**fs** – File and directory operations</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**gt** – Summary tables</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**patchwork** – Plot layouts</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**rnaturalearth** – Natural Earth geographic data</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**sf** – Spatial data processing and mapping</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**terra** – Raster processing and spatial analysis</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**tidyverse** – Data manipulation and visualization</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**viridisLite** – Climate-period color palettes</span>
 <span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>World Meteorological Organization climatological reference periods:  </span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.ncei.noaa.gov/products/wmo-climate-normals&gt;</span></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>Copernicus Climate Data Store / ERA5:  </span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://cds.climate.copernicus.eu/&gt;</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>The project uses **renv** for reproducible R package management. Package versions are recorded in <span class="in">`renv.lock`</span>.</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>ERA5 acquisition and transformation are handled separately by the companion **ERA5-DATA** project.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
 <span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>Natural Earth:  </span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.naturalearthdata.com/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>World Meteorological Organization climatological reference periods:  </span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.ncei.noaa.gov/products/wmo-climate-normals&gt;</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Copernicus Climate Data Store / ERA5:  </span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://cds.climate.copernicus.eu/&gt;</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Natural Earth:  </span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.naturalearthdata.com/&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
