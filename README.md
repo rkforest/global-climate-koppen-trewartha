@@ -14,7 +14,7 @@ and transition mapping.
 
 The complete Quarto book is available at:
 
-[Global Climate Classification Change Analysis](https://rkforest.github.io/global-climate-classification-change-analysis/)
+[Global Climate Classification — Köppen–Trewartha](https://rkforest.github.io/global-climate-koppen-trewartha/)
 
 ## Analysis
 
