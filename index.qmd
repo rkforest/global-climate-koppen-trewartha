@@ -58,7 +58,7 @@ The climate-classification analysis is organized into four sequential stages:
 4. **Transition Mapping**  
    Map the geographic distribution of climate-classification changes, including broad spatial patterns, expansion of dry and desert classifications, retreat of polar classifications, and the long-term REF → RCI transition pattern.
 
-The ERA5-DATA and Global Climate Classification Change Analysis projects are maintained as sibling directories under `~/Projects/`. Shared climate datasets remain in ERA5-DATA, while classification determinants, classifications, transition datasets, and mapping outputs belong to this analysis project.
+The ERA5-DATA and Global Climate Classification — Köppen–Trewartha projects are maintained as sibling directories under ~/Projects/. Shared climate datasets remain in ERA5-DATA, while classification determinants, classifications, transition datasets, and mapping outputs belong to this analysis project.
 
 ## Data
 

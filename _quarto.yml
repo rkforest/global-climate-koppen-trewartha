@@ -4,7 +4,7 @@ project:
   resources: ".quarto/files"  
 
 book:
-  title: "Global Climate Classification Change Analysis"
+  title: "Global Climate Classification — Köppen–Trewartha"
   author: "Rick Forest"
   date: today
 

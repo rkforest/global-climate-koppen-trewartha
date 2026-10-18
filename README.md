@@ -1,5 +1,4 @@
-# Global Climate Classification Change Analysis
-
+# Global Climate Classification — Köppen–Trewartha
 This project analyzes changes in global climate classification using ERA5
 temperature and precipitation data. The analysis applies the
 Köppen–Trewartha climate classification system consistently across three
@@ -89,7 +88,7 @@ Projects/
 │   └── data/
 │       └── transformed/             # Shared ERA5 climatologies
 │
-└── global-climate-classification-change-analysis/
+└── global-climate-koppen-trewartha/
     ├── _quarto.yml
     ├── index.qmd
     ├── 01-determinant-calculation.qmd
@@ -158,11 +157,11 @@ reproduce the software environment used during development.
 
 This project uses transformed ERA5 climate datasets prepared by the companion **ERA5-DATA** project. The two projects are expected to reside in sibling directories under `~/Projects/`.
 
-1. Clone or obtain both the `era5-data` and `global-climate-classification-change-analysis` projects, placing them in sibling directories.
+1. Clone or obtain both the `era5-data` and `global-climate-koppen-trewartha` projects, placing them in sibling directories.
 
 2. Prepare the shared monthly temperature and precipitation climatologies for REF (1961–1990), CSN (1991–2020), and RCI (2021–2025) using the acquisition and transformation notebooks in `era5-data`.
 
-3. Open the Global Climate Classification Change Analysis project in Positron and restore its R environment using `renv::restore()`.
+3. Open the Global Climate Classification — Köppen–Trewartha project in Positron and restore its R environment using `renv::restore()`.
 
 4. Run the analysis notebooks in sequence:
 
