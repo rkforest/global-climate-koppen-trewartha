@@ -36,7 +36,12 @@ suppressPackageStartupMessages({
 ```{r}
 #| label: Directories
 
-dir_transformed <- path("data", "transformed")
+dir_transformed <- path(
+  "..",
+  "era5-data",
+  "data",
+  "transformed"
+)
 dir_derived <- path("data", "derived")
 
 determinants_path <- path(
@@ -305,7 +310,7 @@ fn_process_period <- function(period_row) {
     stop(
       "Missing transformed climate data for ",
       period_row$period_abbr[[1]],
-      ". Run 02-data-transformation.qmd first."
+      ". Check the shared ERA5-DATA project's data/transformed directory."
     )
   }
 

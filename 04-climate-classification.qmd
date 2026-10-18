@@ -74,6 +74,110 @@ coastline_path <- path(
 )
 ```
 
+## Classification Reference Data
+
+```{r}
+#| label: classification-group-reference
+
+ktc_group <- c(
+  "A", "B", "C", "D", "E", "F"
+)
+
+ktc_group_labels <- c(
+  A = "Tropical",
+  B = "Dry",
+  C = "Subtropical",
+  D = "Temperate",
+  E = "Boreal",
+  F = "Polar"
+)
+
+ktc_group_hex <- c(
+  A = "#cf5a55",
+  B = "#e79a6a",
+  C = "#1f9d6d",
+  D = "#41b7c8",
+  E = "#2a6bb4",
+  F = "#a285c9"
+)
+
+ktc_group_palette <- tibble(
+  ktc = ktc_group,
+  hex = ktc_group_hex,
+  lbl = ktc_group_labels
+)
+
+write_csv(
+  ktc_group_palette,
+  path(
+    dir_reference,
+    "ktc_group_codes.csv"
+  )
+)
+
+```
+
+```{r}
+#| label: classification-type-reference
+
+ktc_type <- c(
+  "Ar", "Aw",
+  "BW", "BS",
+  "Cs", "Cw", "Cf",
+  "Do", "Dc",
+  "Eo", "Ec",
+  "Ft", "Fi"
+)
+
+ktc_type_labels <- c(
+  Ar = "Tropical Rainforest",
+  Aw = "Tropical Savanna (dry season)",
+  BW = "Desert (Arid)",
+  BS = "Steppe (Semiarid)",
+  Cs = "Mediterranean (dry summer)",
+  Cw = "Subtropical (dry winter)",
+  Cf = "Subtropical (no dry season)",
+  Do = "Temperate (Oceanic)",
+  Dc = "Temperate (Continental)",
+  Eo = "Boreal (Oceanic)",
+  Ec = "Boreal (Continental)",
+  Ft = "Tundra",
+  Fi = "Ice Cap"
+)
+
+ktc_type_hex <- c(
+  Ar = "#85080c",
+  Aw = "#cb1e0a",
+  BW = "#fede49",
+  BS = "#f09036",
+  Cs = "#38d98f",
+  Cw = "#1f9d6d",
+  Cf = "#13724f",
+  Do = "#02add7",
+  Dc = "#0f74bb",
+  Eo = "#1e66c1",
+  Ec = "#103e7b",
+  Ft = "#9c84c7",
+  Fi = "#60468d"
+)
+
+ktc_type_palette <- tibble(
+  ktc = ktc_type,
+  hex = ktc_type_hex,
+  lbl = ktc_type_labels
+)
+
+write_csv(
+  ktc_type_palette,
+  path(
+    dir_reference,
+    "ktc_type_codes.csv"
+  )
+)
+
+```
+
+
 ```{r}
 #| label: Control
 
