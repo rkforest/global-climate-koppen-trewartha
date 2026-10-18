@@ -103,7 +103,7 @@ required_reference_files <- c(
 if (!all(file_exists(required_reference_files))) {
   stop(
     "Missing transition-mapping reference files in data/reference. ",
-    "Run 01-data-acquisition.qmd first."
+    "Run 04-climate-classification.qmd to generate the reference data."
   )
 }
 

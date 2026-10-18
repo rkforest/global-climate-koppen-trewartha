@@ -120,7 +120,7 @@ ktc_codes_path <- path(
 if (!file_exists(ktc_codes_path)) {
   stop(
     "Missing data/reference/ktc_type_codes.csv. ",
-    "Run 01-data-acquisition.qmd first."
+    "Run 04-climate-classification.qmd to generate the reference data."
   )
 }
 
